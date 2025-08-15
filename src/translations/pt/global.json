@@ -1,0 +1,157 @@
+{
+    "header": {
+        "links": {
+            "home": "Início",
+            "work": "Trabalho",
+            "expierence": "Experiência",
+            "tools": "Ferramentas",
+            "contact": "Contato"
+        }
+    },
+    "aside": {
+        "buttons": {
+            "language": {
+                "alt": "Bandeira do Brasil",
+                "label": "Idioma"
+            },
+            "theme": {
+                "label": "Tema"
+            }
+        },
+        "dropdowns": {
+            "language": {
+                "pt": {
+                    "alt": "Bandeira do Brasil",
+                    "label": "Português"
+                },
+                "en": {
+                    "alt": "Bandeira dos Estados Unidos",
+                    "label": "Inglês"
+                },
+                "es": {
+                    "alt": "Bandeira da Espanha",
+                    "label": "Espanhol"
+                }
+            }
+        }
+    },
+    "profile": {
+        "name": "Lucas A. de Moraes",
+        "description": "Desenvolvedor Full Stack",
+        "location": "Sul de Minas, Brasil",
+        "social": {
+            "linkedin": "LinkedIn",
+            "whatsapp": "WhatsApp",
+            "github": "GitHub"
+        },
+        "button": "Chama"
+    },
+    "sections": {
+        "about": {
+            "title": "DO SIMPLES AO",
+            "strong": "VALOROSO",
+            "description": "Criando interfaces intuitivas e funcionais, agregando valor à qualidade do produto.",
+            "numbers": {
+                "years": "ANOS DE EXPERIÊNCIA",
+                "projects": "PROJETOS COMPLETOS",
+                "products": "PRODUTOS LANÇADOS"
+            },
+            "buttons": {
+                "contact": "Chama",
+                "work": "Meu trampo"
+            }
+        },
+        "work": {
+            "title": "PRODUTOS MAIS",
+            "strong": "RECENTES",
+            "products": {
+                "NoteHub": {
+                    "name": "NoteHub",
+                    "description": "Uma plataforma de anotações colaborativa."
+                }
+            }
+        },
+        "expierence": {
+            "title": "ANOS DE",
+            "strong": "EXPERIÊNCIA",
+            "companies": {
+                "NoteHub": {
+                    "name": "NoteHub",
+                    "description": "Fundador da aplicação por completa, responsável por toda a arquitetura, segurança, desenvolvimento, produção, mensageria e manutenção.",
+                    "role": "Desenvolvedor Full Stack",
+                    "period": "2024 - Present"
+                }
+            }
+        },
+        "tools": {
+            "title": "PRINCIPAIS",
+            "strong": "FERRAMENTAS",
+            "items": {
+                "java": {
+                    "name": "Java",
+                    "description": "Linguagem de programação."
+                },
+                "spring": {
+                    "name": "Spring",
+                    "description": "Framework Java."
+                },
+                "docker": {
+                    "name": "Docker",
+                    "description": "Plataforma de contêineres."
+                },
+                "typescript": {
+                    "name": "TypeScript",
+                    "description": "Linguagem de programação."
+                },
+                "reactjs": {
+                    "name": "React.js",
+                    "description": "Biblioteca JavaScript."
+                },
+                "nextjs": {
+                    "name": "Next.js",
+                    "description": "Framework React."
+                },
+                "postgres": {
+                    "name": "PostgreSQL",
+                    "description": "Banco de dados."
+                },
+                "supasbase": {
+                    "name": "Supabase",
+                    "description": "Plataforma de armazenamento."
+                },
+                "flyio": {
+                    "name": "Fly.io",
+                    "description": "Plataforma de hospedagem."
+                },
+                "vercel": {
+                    "name": "Vercel",
+                    "description": "Plataforma de hospedagem."
+                }
+            }
+        },
+        "contact": {
+            "title": "VAMOS TRABALHAR",
+            "strong": "JUNTOS",
+            "form": {
+                "name": {
+                    "label": "Nome",
+                    "placeholder": "Seu nome"
+                },
+                "email": {
+                    "label": "Email",
+                    "placeholder": "seu@email.com"
+                },
+                "message": {
+                    "label": "Mensagem",
+                    "placeholder": "Sua mensagem"
+                },
+                "button": {
+                    "text": "Enviar"
+                }
+            }
+        }
+    },
+    "footer": {
+        "text": "Feito por Lucas A. de Moraes"
+    }
+}

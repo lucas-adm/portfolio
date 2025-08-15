@@ -1,0 +1,157 @@
+{
+    "header": {
+        "links": {
+            "home": "Home",
+            "work": "Work",
+            "expierence": "Experience",
+            "tools": "Tools",
+            "contact": "Contact"
+        }
+    },
+    "aside": {
+        "buttons": {
+            "language": {
+                "alt": "North-American flag",
+                "label": "Language"
+            },
+            "theme": {
+                "label": "Theme"
+            }
+        },
+        "dropdowns": {
+            "language": {
+                "pt": {
+                    "alt": "Flag of Brazil",
+                    "label": "Portuguese"
+                },
+                "en": {
+                    "alt": "Flag of The United States",
+                    "label": "English"
+                },
+                "es": {
+                    "alt": "Flag of Spain",
+                    "label": "Spanish"
+                }
+            }
+        }
+    },
+    "profile": {
+        "name": "Lucas A. de Moraes",
+        "description": "Full Stack Developer",
+        "location": "South of Minas, Brazil",
+        "social": {
+            "linkedin": "LinkedIn",
+            "whatsapp": "WhatsApp",
+            "github": "GitHub"
+        },
+        "button": "Contact me"
+    },
+    "sections": {
+        "about": {
+            "title": "FROM SIMPLE TO",
+            "strong": "VALUABLE",
+            "description": "Creating intuitive and functional interfaces, adding value to product quality.",
+            "numbers": {
+                "years": "YEARS OF EXPERIENCE",
+                "projects": "COMPLETED PROJECTS",
+                "products": "PRODUCTS LAUNCHED"
+            },
+            "buttons": {
+                "contact": "Contact me",
+                "work": "My work"
+            }
+        },
+        "work": {
+            "title": "MOST RECENT",
+            "strong": "PRODUCTS",
+            "products": {
+                "NoteHub": {
+                    "name": "NoteHub",
+                    "description": "A collaborative note-taking platform."
+                }
+            }
+        },
+        "expierence": {
+            "title": "YEARS OF",
+            "strong": "EXPERIENCE",
+            "companies": {
+                "NoteHub": {
+                    "name": "NoteHub",
+                    "description": "Founder of the entire application, responsible for all architecture, security, development, production, messaging, and maintenance.",
+                    "role": "Full Stack Developer",
+                    "period": "2024 - Present"
+                }
+            }
+        },
+        "tools": {
+            "title": "MAIN",
+            "strong": "TOOLS",
+            "items": {
+                "java": {
+                    "name": "Java",
+                    "description": "Programming language."
+                },
+                "spring": {
+                    "name": "Spring",
+                    "description": "Java framework."
+                },
+                "docker": {
+                    "name": "Docker",
+                    "description": "Container platform."
+                },
+                "typescript": {
+                    "name": "TypeScript",
+                    "description": "Programming language."
+                },
+                "reactjs": {
+                    "name": "React.js",
+                    "description": "JavaScript library."
+                },
+                "nextjs": {
+                    "name": "Next.js",
+                    "description": "React framework."
+                },
+                "postgres": {
+                    "name": "PostgreSQL",
+                    "description": "Database."
+                },
+                "supasbase": {
+                    "name": "Supabase",
+                    "description": "Storage platform."
+                },
+                "flyio": {
+                    "name": "Fly.io",
+                    "description": "Hosting platform."
+                },
+                "vercel": {
+                    "name": "Vercel",
+                    "description": "Hosting platform."
+                }
+            }
+        },
+        "contact": {
+            "title": "LET'S WORK",
+            "strong": "TOGETHER",
+            "form": {
+                "name": {
+                    "label": "Name",
+                    "placeholder": "Your name"
+                },
+                "email": {
+                    "label": "Email",
+                    "placeholder": "your@email.com"
+                },
+                "message": {
+                    "label": "Message",
+                    "placeholder": "Your message"
+                },
+                "button": {
+                    "text": "Send"
+                }
+            }
+        }
+    },
+    "footer": {
+        "text": "Made by Lucas A. de Moraes"
+    }
+}
