@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "0.1.0",
+  "version": "1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@tabler/icons": "^3.34.1",
+    "@tabler/icons-react": "^3.34.1",
     "clsx": "^2.1.1",
+    "i18next": "^25.3.4",
     "next": "15.4.6",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "react-i18next": "^15.6.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
