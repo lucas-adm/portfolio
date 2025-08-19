@@ -32,6 +32,10 @@
                     "alt": "Flag of Spain",
                     "label": "Spanish"
                 }
+            },
+            "theme": {
+                "dark": "Dark",
+                "light": "Light"
             }
         }
     },

@@ -1,4 +1,4 @@
-import { Dropdown, Item, LanguageContent } from "./elements"
+import { Dropdown, Item, LanguageContent, ThemeContent } from "./elements"
 import { IconMoonFilled } from "@tabler/icons-react";
 import { useId, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -22,7 +22,7 @@ export const Aside = (props: React.HTMLAttributes<HTMLElement>) => {
 
     return (
         <aside aria-label="Side menu" {...props}>
-            <ul role="list" className="fixed top-5 right-5 flex flex-col gap-2">
+            <ul className="fixed top-5 right-5 flex flex-col gap-2">
                 <Item
                     ref={languageTriggerRef}
                     id={languageTriggerId}
@@ -69,6 +69,14 @@ export const Aside = (props: React.HTMLAttributes<HTMLElement>) => {
                         isDropdownOpen={isThemeDropdownOpen}
                         setIsDropdownOpen={setIsThemeDropdownOpen}
                     >
+                        <ThemeContent
+                            id={themeMenuId}
+                            role="menu"
+                            aria-orientation="vertical"
+                            aria-labelledby={themeTriggerId}
+                            aria-hidden={!isThemeDropdownOpen}
+                            hidden={!isThemeDropdownOpen}
+                        />
                     </Dropdown>
                 </Item>
             </ul>

@@ -16,7 +16,7 @@ export const Dropdown = ({ triggerRef, isDropdownOpen, setIsDropdownOpen, childr
     const handleClickInsideUL = useCallback((e: MouseEvent): void => {
         const dropdown = dropdownRef.current;
         const target = e.target as HTMLElement;
-        if (dropdown && isDropdownOpen && target.tagName === "UL") return;
+        if (dropdown && isDropdownOpen && target.tagName === "DIV") return;
         setIsDropdownOpen(false);
         return;
     }, [isDropdownOpen, setIsDropdownOpen])
@@ -35,7 +35,7 @@ export const Dropdown = ({ triggerRef, isDropdownOpen, setIsDropdownOpen, childr
                 trigger.focus();
                 setIsDropdownOpen(false);
             }
-            if (key === 'Home' || key === 'End' || key === 'ArrowUp' || key === 'ArrowDown') {
+            if (key === 'Home' || key === 'End' || key === 'ArrowUp' || key === 'ArrowLeft' || key === 'ArrowDown' || key === 'ArrowRight') {
                 e.preventDefault();
                 const items = Array.from(dropdown.querySelectorAll<HTMLElement>('button'));
                 if (items.length === 0) return;
@@ -45,14 +45,15 @@ export const Dropdown = ({ triggerRef, isDropdownOpen, setIsDropdownOpen, childr
                 if (key === 'Home') nextIndex = 0;
                 if (key === 'End') nextIndex = items.length - 1;
                 if (key === 'ArrowUp' && currentIndex > 0) nextIndex = currentIndex - 1;
+                if (key === 'ArrowLeft' && currentIndex > 0) nextIndex = currentIndex - 1;
                 if (key === 'ArrowDown' && currentIndex < items.length - 1) nextIndex = currentIndex + 1;
+                if (key === 'ArrowRight' && currentIndex < items.length - 1) nextIndex = currentIndex + 1;
                 items[nextIndex].focus();
             }
             return;
         }
         return;
     }, [isDropdownOpen, setIsDropdownOpen, triggerRef])
-
 
     useEffect(() => {
         const trigger = triggerRef.current;
@@ -75,7 +76,8 @@ export const Dropdown = ({ triggerRef, isDropdownOpen, setIsDropdownOpen, childr
             className={clsx(
                 'overflow-hidden',
                 'absolute top-0 right-36',
-                'w-[155px]',
+                'w-[155px] rounded',
+                'dark:bg-light bg-dark',
                 'transform-gpu origin-top-right',
                 'transition-transform duration-300 ease-out',
                 isDropdownOpen

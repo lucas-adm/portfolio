@@ -1,16 +1,16 @@
 import { Item } from "./elements";
 
-export const LanguageContent = (props: React.HTMLAttributes<HTMLUListElement>) => {
+export const LanguageContent = (props: React.HTMLAttributes<HTMLDivElement>) => {
 
     return (
-        <ul
-            className="p-1 rounded flex flex-col gap-1 bg-[#fefeff]"
+        <div
+            className="p-1 flex flex-col gap-1"
             {...props}
         >
             <Item lng="pt" />
             <Item lng="en" />
             <Item lng="es" />
-        </ul>
+        </div>
     )
 
 }

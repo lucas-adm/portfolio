@@ -1,11 +1,13 @@
-import { LanguageProvider } from "@/contexts";
+import { LanguageProvider, PreferencesProvider } from "@/contexts";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
 
     return (
-        <LanguageProvider>
-            {children}
-        </LanguageProvider>
+        <PreferencesProvider>
+            <LanguageProvider>
+                {children}
+            </LanguageProvider>
+        </PreferencesProvider>
     )
 
 }

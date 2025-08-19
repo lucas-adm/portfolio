@@ -1,26 +1,35 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:where(.dark, .dark *));
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+:root {
+  --dark: oklch(0.1879 0.0016 17.3);
+  --light: oklch(0.9992 0.0011 197.14);
+  --neutral: oklch(55.6% 0 0);
+  --primary: oklch(0.606 0.25 292.717);
+  --secondary: oklch(0.38 0.189 293.745);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --color-dark: var(--dark);
+    --color-light: var(--light);
+    --color-neutral: var(--neutral);
+    --color-primary: var(--primary);
+    --color-secondary: var(--secondary);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-dark: var(--dark);
+  --color-light: var(--light);
+  --color-neutral: var(--neutral);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+}
+
+.custom-outline {
+  @apply outline-offset-4 dark:outline-offset-0 outline-primary;
 }

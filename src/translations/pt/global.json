@@ -32,6 +32,10 @@
                     "alt": "Bandeira da Espanha",
                     "label": "Espanhol"
                 }
+            },
+            "theme": {
+                "dark": "Escuro",
+                "light": "Claro"
             }
         }
     },

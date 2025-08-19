@@ -32,6 +32,10 @@
                     "alt": "Bandera de España",
                     "label": "Español"
                 }
+            },
+            "theme": {
+                "dark": "Oscuro",
+                "light": "Claro"
             }
         }
     },

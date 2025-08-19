@@ -1,1 +1,2 @@
-export { LanguageContent } from "./language";
+export { LanguageContent } from './language';
+export { ThemeContent } from './theme';
