@@ -48,7 +48,14 @@ export const ThemeItem = ({ forTheme, icon: Icon, children, ...rest }: ThemeItem
         >
             <Ripple />
             <Icon aria-hidden="true" size={20} className="dark:fill-dark fill-light" />
-            <span className="pl-2 border-l border-neutral-950/10 font-mono font-semibold text-sm dark:text-dark text-light">
+            <span
+                className={clsx(
+                    'pl-2',
+                    'border-l dark:border-dark/25 border-light/25',
+                    'font-mono font-semibold text-sm insm:text-xs',
+                    'dark:text-dark text-light',
+                )}
+            >
                 {children}
             </span>
         </button>

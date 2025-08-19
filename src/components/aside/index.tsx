@@ -1,3 +1,4 @@
+import { clsx } from "clsx";
 import { Dropdown, Item, LanguageContent, ThemeContent } from "./elements"
 import { IconMoonFilled } from "@tabler/icons-react";
 import { useId, useRef, useState } from "react";
@@ -22,7 +23,12 @@ export const Aside = (props: React.HTMLAttributes<HTMLElement>) => {
 
     return (
         <aside aria-label="Side menu" {...props}>
-            <ul className="fixed top-5 right-5 flex flex-col gap-2">
+            <ul className={clsx(
+                'fixed',
+                'top-5 right-5 bottom-auto',
+                'insm:top-auto insm:bottom-5',
+                'flex flex-col gap-2',
+            )}>
                 <Item
                     ref={languageTriggerRef}
                     id={languageTriggerId}

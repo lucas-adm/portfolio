@@ -50,7 +50,7 @@ export const Item = ({ lng, ...rest }: ItemProps) => {
             {...rest}
         >
             <Ripple />
-            <figure>
+            <figure className="flex-none">
                 <Image
                     src={`/svgs/flags/${lng}.svg`}
                     alt={t(`aside.dropdowns.language.${lng}.alt`)}
@@ -58,7 +58,14 @@ export const Item = ({ lng, ...rest }: ItemProps) => {
                     height={0}
                 />
             </figure>
-            <span className="pl-2 border-l dark:border-dark/25 border-light/25 font-mono font-semibold text-sm dark:text-dark text-light">
+            <span
+                className={clsx(
+                    'pl-2',
+                    'border-l dark:border-dark/25 border-light/25',
+                    'font-mono font-semibold text-sm insm:text-xs',
+                    'dark:text-dark text-light',
+                )}
+            >
                 {t(`aside.dropdowns.language.${lng}.label`)}
             </span>
         </button>

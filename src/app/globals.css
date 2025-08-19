@@ -1,6 +1,11 @@
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
+@custom-variant in2xl (@media (max-width: 1536px));
+@custom-variant inxl (@media (max-width: 1280px));
+@custom-variant inlg (@media (max-width: 1024px));
+@custom-variant inmd (@media (max-width: 768px));
+@custom-variant insm (@media (max-width: 640px));
 
 :root {
   --dark: oklch(0.1879 0.0016 17.3);

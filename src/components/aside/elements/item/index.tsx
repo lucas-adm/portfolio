@@ -11,7 +11,7 @@ type ItemProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 }
 
 export const Item = forwardRef<HTMLButtonElement, ItemProps>(({ figure, icon: Icon, label, isDropdownOpen, setIsDropdownOpen, children, ...rest }, ref) => (
-    <li className="group relative min-w-[135px] min-h-[33px] rounded-full">
+    <li className="group relative min-w-[135px] insm:min-w-[127px] min-h-[33px] rounded-full">
         <button
             ref={ref}
             type="button"
@@ -56,7 +56,8 @@ export const Item = forwardRef<HTMLButtonElement, ItemProps>(({ figure, icon: Ic
             <span
                 className={clsx(
                     'pl-2 border-l dark:border-dark/25 border-light/25',
-                    'font-mono font-semibold text-sm dark:text-dark text-light',
+                    'font-mono font-semibold text-sm insm:text-xs',
+                    'dark:text-dark text-light',
                     'transition-colors duration-1000',
                     'group-hover:text-light!',
                     'group-active:text-light!',

@@ -48,7 +48,7 @@ export const ColorItem = ({ shade, icon: Icon, ...rest }: ColorItemProps) => {
             className={clsx(
                 'cursor-pointer outline-primary',
                 'overflow-hidden',
-                'relative p-1 rounded',
+                'relative w-fit m-auto p-1 rounded',
                 'flex items-center gap-2',
                 'transition-colors duration-300',
                 isActive

@@ -27,7 +27,7 @@ export const ThemeContent = (props: React.HTMLAttributes<HTMLDivElement>) => {
                 </ThemeItem>
             </div>
             <hr aria-hidden="true" className="pointer-events-none w-4/5 m-auto dark:text-dark/25 text-light/25" />
-            <div role="group" aria-label="Colors" className="flex items-center justify-between gap-1 flex-wrap">
+            <div role="group" aria-label="Colors" className="grid grid-cols-3">
                 {Object.entries(colors).map(([name, c]) => (
                     <ColorItem
                         key={name}

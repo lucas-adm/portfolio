@@ -48,6 +48,7 @@ export const Dropdown = ({ triggerRef, isDropdownOpen, setIsDropdownOpen, childr
                 if (key === 'ArrowLeft' && currentIndex > 0) nextIndex = currentIndex - 1;
                 if (key === 'ArrowDown' && currentIndex < items.length - 1) nextIndex = currentIndex + 1;
                 if (key === 'ArrowRight' && currentIndex < items.length - 1) nextIndex = currentIndex + 1;
+                if ((key === 'ArrowUp' || key === 'ArrowLeft') && currentIndex === -1) nextIndex = 0;
                 items[nextIndex].focus();
             }
             return;
@@ -75,10 +76,11 @@ export const Dropdown = ({ triggerRef, isDropdownOpen, setIsDropdownOpen, childr
             ref={dropdownRef}
             className={clsx(
                 'overflow-hidden',
-                'absolute top-0 right-36',
-                'w-[155px] rounded',
+                'absolute top-0 bottom-auto right-36',
+                'insm:top-auto insm:bottom-0 insm:right-[135px]',
+                'w-[155px] insm:w-[135px] rounded',
                 'dark:bg-light bg-dark',
-                'transform-gpu origin-top-right',
+                'transform-gpu origin-top-right insm:origin-bottom-right',
                 'transition-transform duration-300 ease-out',
                 isDropdownOpen
                     ? 'pointer-events-auto visible scale-100'
