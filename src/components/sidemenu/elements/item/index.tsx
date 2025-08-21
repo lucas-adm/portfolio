@@ -17,21 +17,14 @@ export const Item = forwardRef<HTMLButtonElement, ItemProps>(({ figure, icon: Ic
             type="button"
             onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             className={clsx(
-                'z-10 cursor-pointer overflow-hidden',
-                'custom-outline',
-                'relative w-full h-full px-3 py-1 rounded-full',
+                'cursor-pointer',
+                'outline-custom',
+                'w-full h-full px-3 py-1 rounded-full',
                 'flex items-center gap-2',
                 'transition-transform',
                 'active:scale-95',
-                'before:pointer-events-none',
-                'before:[transform:translateZ(0)]',
-                'before:-z-10 before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2',
-                'before:w-[333px] before:h-[333px] before:rounded-full',
-                'dark:before:bg-light before:bg-dark',
-                'before:transition-all before:duration-[666ms]',
-                'hover:before:shadow-[inset_0_0_0_175px_var(--color-primary)]',
-                'active:before:shadow-[inset_0_0_0_175px_var(--color-secondary)]',
-                isDropdownOpen && 'before:shadow-[inset_0_0_0_175px_var(--color-primary)]',
+                'animate-halo motion-safe:animate-halo motion-reduce:animate-none',
+                isDropdownOpen && 'after:shadow-[inset_0_0_0_175px] after:shadow-primary',
             )}
             {...rest}
         >

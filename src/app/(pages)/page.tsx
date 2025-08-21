@@ -1,12 +1,15 @@
-'use client';
-
-import { Aside } from "@/components";
+import { Profile } from "@/components/sections";
+import { SideMenu } from "@/components";
 
 const Page = () => {
 
     return (
-        <main className="max-w-full w-screen h-screen dark:bg-dark bg-light transition-colors duration-300">
-            <Aside />
+        <main className="dark:bg-dark bg-light transition-colors duration-666">
+            <SideMenu />
+            <div className="grid grid-cols-3 inlg:grid-cols-1">
+                <Profile />
+                <div className="col-span-2"></div>
+            </div>
         </main>
     )
 

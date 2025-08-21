@@ -83,6 +83,10 @@ export const Ripple = ({ color = "rgba(255,255,255,0.333)" }: RippleProps) => {
 
     }, [createRipple])
 
-    return <span ref={layerRef} aria-hidden className="pointer-events-none overflow-hidden absolute inset-0" />;
+    return <span
+        ref={layerRef}
+        aria-hidden="true"
+        className="pointer-events-none overflow-hidden absolute inset-0"
+    />
 
 }

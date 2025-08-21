@@ -50,7 +50,7 @@ export const ColorItem = ({ shade, icon: Icon, ...rest }: ColorItemProps) => {
                 'overflow-hidden',
                 'relative w-fit m-auto p-1 rounded',
                 'flex items-center gap-2',
-                'transition-colors duration-300',
+                'transition-colors duration-333',
                 isActive
                     ? 'bg-primary/50'
                     : 'bg-transparent hover:bg-neutral/25 focus-visible:bg-neutral/25',

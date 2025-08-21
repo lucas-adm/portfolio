@@ -39,18 +39,21 @@
             }
         }
     },
-    "profile": {
-        "name": "Lucas A. de Moraes",
-        "description": "Desarrollador Full Stack",
-        "location": "Sur de Minas, Brasil",
-        "social": {
-            "linkedin": "LinkedIn",
-            "whatsapp": "WhatsApp",
-            "github": "GitHub"
-        },
-        "button": "Contáctame"
-    },
     "sections": {
+        "profile": {
+            "photo": {
+                "alt": "Foto de Lucas"
+            },
+            "name": "Lucas A. de Moraes",
+            "description": "Desarrollador Full Stack",
+            "location": "Sur de Minas, Brasil",
+            "socials": {
+                "linkedin": "Abrir LinkedIn en una nueva pestaña",
+                "whatsapp": "Abrir WhatsApp en una nueva pestaña",
+                "github": "Abrir GitHub en una nueva pestaña"
+            },
+            "button": "Hablemos"
+        },
         "about": {
             "title": "DE LO SIMPLE A LO",
             "strong": "VALIOSO",
@@ -61,7 +64,7 @@
                 "products": "PRODUCTOS LANZADOS"
             },
             "buttons": {
-                "contact": "Contáctame",
+                "contact": "Hablemos",
                 "work": "Mi trabajo"
             }
         },

@@ -1,30 +1,27 @@
 import { clsx } from "clsx";
-import { Language } from "@/utils";
 import { Ripple } from "@/components/misc";
-import { useLanguage } from "@/hooks";
-import { useTranslation } from "react-i18next";
-import Image from "next/image";
+import { usePreferences } from "@/hooks";
 
-type ItemProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
-    lng: Language;
+type ThemeItemProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
+    forTheme: 'dark' | 'light';
+    icon: React.ElementType;
 }
 
-export const Item = ({ lng, ...rest }: ItemProps) => {
+export const ThemeItem = ({ forTheme, icon: Icon, children, ...rest }: ThemeItemProps) => {
 
-    const [t, i18n] = useTranslation("global");
-    const { setLanguage } = useLanguage();
+    const { preferences: { shouldUseDarkTheme }, setPreferences } = usePreferences();
 
-    const isActive = i18n.language === lng;
+    const isActive = forTheme === 'dark' ? shouldUseDarkTheme === true : shouldUseDarkTheme === false;
 
     const handleClick = (): void => {
-        setLanguage(lng);
+        setPreferences({ shouldUseDarkTheme: !shouldUseDarkTheme });
         return;
     }
 
     const handleKeydown = (e: React.KeyboardEvent): void => {
         const key = e.key;
         if (key === 'Enter' || key === ' ') {
-            setLanguage(lng);
+            setPreferences({ shouldUseDarkTheme: !shouldUseDarkTheme });
             return;
         }
         return;
@@ -42,7 +39,7 @@ export const Item = ({ lng, ...rest }: ItemProps) => {
                 'overflow-hidden',
                 'relative w-full min-h-[33px] px-2 py-1 rounded',
                 'flex items-center gap-2',
-                'transition-colors duration-300',
+                'transition-colors duration-333',
                 isActive
                     ? 'bg-primary/50'
                     : 'bg-transparent hover:bg-neutral/25 focus-visible:bg-neutral/25',
@@ -50,14 +47,7 @@ export const Item = ({ lng, ...rest }: ItemProps) => {
             {...rest}
         >
             <Ripple />
-            <figure className="flex-none">
-                <Image
-                    src={`/svgs/flags/${lng}.svg`}
-                    alt={t(`aside.dropdowns.language.${lng}.alt`)}
-                    width={25}
-                    height={0}
-                />
-            </figure>
+            <Icon aria-hidden="true" size={20} className="dark:fill-dark fill-light" />
             <span
                 className={clsx(
                     'pl-2',
@@ -66,7 +56,7 @@ export const Item = ({ lng, ...rest }: ItemProps) => {
                     'dark:text-dark text-light',
                 )}
             >
-                {t(`aside.dropdowns.language.${lng}.label`)}
+                {children}
             </span>
         </button>
     )

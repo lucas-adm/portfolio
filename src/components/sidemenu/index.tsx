@@ -1,3 +1,5 @@
+'use client';
+
 import { clsx } from "clsx";
 import { Dropdown, Item, LanguageContent, ThemeContent } from "./elements"
 import { IconMoonFilled } from "@tabler/icons-react";
@@ -5,7 +7,7 @@ import { useId, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 
-export const Aside = (props: React.HTMLAttributes<HTMLElement>) => {
+export const SideMenu = (props: React.HTMLAttributes<HTMLElement>) => {
 
     const [t, i18n] = useTranslation("global");
 
@@ -24,7 +26,7 @@ export const Aside = (props: React.HTMLAttributes<HTMLElement>) => {
     return (
         <aside aria-label="Side menu" {...props}>
             <ul className={clsx(
-                'fixed',
+                'z-20 fixed',
                 'top-5 right-5 bottom-auto',
                 'insm:top-auto insm:bottom-5',
                 'flex flex-col gap-2',
@@ -38,7 +40,8 @@ export const Aside = (props: React.HTMLAttributes<HTMLElement>) => {
                     figure={<Image
                         src={`/svgs/flags/${i18n.language}.svg`}
                         alt={t('aside.buttons.language.alt')}
-                        width={25} height={0} />
+                        width={25} height={0}
+                        className="pointer-events-none select-none" />
                     }
                     label={t('aside.buttons.language.label')}
                     isDropdownOpen={isLanguageDropdownOpen}
