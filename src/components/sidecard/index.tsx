@@ -34,8 +34,8 @@ export const SideCard = (props: React.HTMLAttributes<HTMLElement>) => {
             {...props}
         >
             <Photo />
-            <Name>{t('sections.profile.name')}</Name>
-            <Description>{t('sections.profile.description')}</Description>
+            <Name id="profile-title">{t('sections.profile.name')}</Name>
+            <Description id="profile-desc">{t('sections.profile.description')}</Description>
             <Location>{t('sections.profile.location')}</Location>
             <nav className="my-8">
                 <ul className="flex items-center gap-6">

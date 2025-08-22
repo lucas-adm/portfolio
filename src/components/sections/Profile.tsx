@@ -3,13 +3,14 @@ import { SideCard } from "../sidecard";
 
 export const Profile = (props: React.HTMLAttributes<HTMLElement>) => (
     <section
-        aria-label="profile"
         id="profile"
+        aria-labelledby="profile-title"
+        aria-describedby="profile-desc"
         className={clsx(
             'sticky top-0 left-0 h-screen px-2 py-4',
-            'inlg:static',
+            'flex items-center justify-end',
+            'inlg:static inlg:justify-center',
             'inmd:h-svh',
-            'flex items-center justify-center',
         )}
         {...props}
     >
