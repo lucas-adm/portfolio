@@ -13,10 +13,13 @@ export const Dropdown = ({ triggerRef, isDropdownOpen, setIsDropdownOpen, childr
 
     const dropdownRef = useRef<HTMLDivElement | null>(null);
 
-    const handleClickInsideUL = useCallback((e: MouseEvent): void => {
+    const handleClickInsideDropdown = useCallback((e: MouseEvent): void => {
         const dropdown = dropdownRef.current;
         const target = e.target as HTMLElement;
-        if (dropdown && isDropdownOpen && target.tagName === "DIV") return;
+        if (dropdown && isDropdownOpen) {
+            const li = dropdown.closest('li') as HTMLElement;
+            if (li.contains(target) && target.tagName === 'DIV') return;
+        }
         setIsDropdownOpen(false);
         return;
     }, [isDropdownOpen, setIsDropdownOpen])
@@ -62,14 +65,14 @@ export const Dropdown = ({ triggerRef, isDropdownOpen, setIsDropdownOpen, childr
         if (trigger && dropdown) {
             trigger.addEventListener('keydown', handleKeydown);
             dropdown.addEventListener('keydown', handleKeydown);
-            document.addEventListener('click', handleClickInsideUL);
+            document.addEventListener('click', handleClickInsideDropdown);
             return () => {
                 trigger.removeEventListener('keydown', handleKeydown);
                 dropdown.removeEventListener('keydown', handleKeydown);
-                document.removeEventListener('click', handleClickInsideUL);
+                document.removeEventListener('click', handleClickInsideDropdown);
             }
         }
-    }, [handleClickInsideUL, handleKeydown, triggerRef])
+    }, [handleClickInsideDropdown, handleKeydown, triggerRef])
 
     return (
         <div
