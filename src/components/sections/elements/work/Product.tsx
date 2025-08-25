@@ -1,0 +1,1 @@
+export const Product = (props: React.LiHTMLAttributes<HTMLLIElement>) => <li className="w-fit" {...props} />;

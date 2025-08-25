@@ -12,7 +12,7 @@ export const Header = (props: React.HTMLAttributes<HTMLElement>) => {
     return (
         <header aria-label="Main navigation"
             className={clsx(
-                'z-999',
+                'z-800',
                 'fixed top-10 left-1/2 -translate-x-1/2',
                 'w-fit px-4 py-2 rounded-full',
                 'dark:bg-light/33 bg-dark/33',

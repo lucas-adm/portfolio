@@ -72,9 +72,11 @@
             "title": "PRODUCTOS MÁS",
             "strong": "RECIENTES",
             "products": {
-                "NoteHub": {
+                "notehub": {
+                    "alt": "Foto de la red social NoteHub",
                     "name": "NoteHub",
-                    "description": "Una plataforma colaborativa de toma de notas."
+                    "description": "Red Social",
+                    "status": "En vivo"
                 }
             }
         },

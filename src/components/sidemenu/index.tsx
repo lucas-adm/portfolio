@@ -26,7 +26,7 @@ export const SideMenu = (props: React.HTMLAttributes<HTMLElement>) => {
     return (
         <aside aria-label="Side menu" {...props}>
             <ul className={clsx(
-                'z-20 fixed',
+                'z-900 fixed',
                 'top-5 right-5 bottom-auto',
                 'insm:top-auto insm:bottom-5',
                 'flex flex-col gap-2',

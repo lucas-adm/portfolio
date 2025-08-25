@@ -72,9 +72,11 @@
             "title": "PRODUTOS MAIS",
             "strong": "RECENTES",
             "products": {
-                "NoteHub": {
+                "notehub": {
+                    "alt": "Foto da rede social NoteHub",
                     "name": "NoteHub",
-                    "description": "Uma plataforma de anotações colaborativa."
+                    "description": "Rede Social",
+                    "status": "Ao vivo"
                 }
             }
         },

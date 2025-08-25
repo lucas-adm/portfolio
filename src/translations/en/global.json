@@ -72,9 +72,11 @@
             "title": "MOST RECENT",
             "strong": "PRODUCTS",
             "products": {
-                "NoteHub": {
+                "notehub": {
+                    "alt": "Photo of the NoteHub social network",
                     "name": "NoteHub",
-                    "description": "A collaborative note-taking platform."
+                    "description": "Social Network",
+                    "status": "Live"
                 }
             }
         },

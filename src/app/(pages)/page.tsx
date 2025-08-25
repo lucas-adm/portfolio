@@ -1,4 +1,4 @@
-import { About, Profile } from "@/components/sections";
+import { About, Profile, Work } from "@/components/sections";
 import { SideMenu } from "@/components";
 
 const Page = () => {
@@ -10,6 +10,7 @@ const Page = () => {
                 <Profile />
                 <div>
                     <About />
+                    <Work />
                 </div>
             </div>
         </main>

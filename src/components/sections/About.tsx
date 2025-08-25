@@ -23,7 +23,7 @@ export const About = (props: React.HTMLAttributes<HTMLElement>) => {
                     {t('sections.about.description')}
                 </P>
             </header>
-            <dl className="my-12 flex items-center gap-12 insm:justify-center insm:gap-6">
+            <dl className="my-12 flex items-center gap-12 inlg:justify-center insm:gap-6">
                 <D>
                     <DT>+4</DT>
                     <DD>{t('sections.about.numbers.years')}</DD>
@@ -39,7 +39,7 @@ export const About = (props: React.HTMLAttributes<HTMLElement>) => {
             </dl>
             <nav
                 aria-labelledby="about-title"
-                className="flex items-center gap-6 insm:justify-center"
+                className="flex items-center gap-6 inlg:justify-center"
             >
                 <ToContact>{t('sections.about.buttons.contact')}</ToContact>
                 <ToWork>{t('sections.about.buttons.work')}</ToWork>
