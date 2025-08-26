@@ -10,7 +10,7 @@ export const ToWork = ({ children, ...rest }: React.ButtonHTMLAttributes<HTMLBut
             'min-w-[135px]',
             'flex items-center gap-3',
             'font-medium dark:text-light text-dark',
-            'transition-colors duration-300',
+            'transition-colors duration-333',
             'hover:text-primary',
             'focus-visible:text-primary',
             'active:text-primary',
@@ -20,7 +20,7 @@ export const ToWork = ({ children, ...rest }: React.ButtonHTMLAttributes<HTMLBut
         <span>{children}</span>
         <IconArrowRight
             className={clsx(
-                'transition-all duration-300',
+                'transition-all duration-333',
                 'group-hover:translate-x-1.5',
                 'group-focus-visible:translate-x-1.5',
                 'group-active:translate-x-1.5',

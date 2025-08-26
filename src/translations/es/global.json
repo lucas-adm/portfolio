@@ -59,7 +59,7 @@
             "strong": "VALIOSO",
             "description": "Creando interfaces intuitivas y funcionales, aportando valor a la calidad del producto.",
             "numbers": {
-                "years": "AÑOS DE EXPERIENCIA",
+                "years": "AÑO DE EXPERIENCIA",
                 "projects": "PROYECTOS COMPLETADOS",
                 "products": "PRODUCTO LANZADO"
             },
@@ -80,7 +80,7 @@
                 }
             }
         },
-        "expierence": {
+        "experience": {
             "title": "AÑOS DE",
             "strong": "EXPERIENCIA",
             "companies": {
@@ -98,43 +98,43 @@
             "items": {
                 "java": {
                     "name": "Java",
-                    "description": "Lenguaje de programación."
+                    "description": "Lenguaje de programación"
                 },
                 "spring": {
                     "name": "Spring",
-                    "description": "Framework de Java."
+                    "description": "Framework de Java"
                 },
                 "docker": {
                     "name": "Docker",
-                    "description": "Plataforma de contenedores."
+                    "description": "Plataforma de contenedores"
                 },
                 "typescript": {
                     "name": "TypeScript",
-                    "description": "Lenguaje de programación."
+                    "description": "Lenguaje de programación"
                 },
                 "reactjs": {
                     "name": "React.js",
-                    "description": "Biblioteca de JavaScript."
+                    "description": "Biblioteca de JavaScript"
                 },
                 "nextjs": {
                     "name": "Next.js",
-                    "description": "Framework de React."
+                    "description": "Framework de React"
                 },
                 "postgres": {
                     "name": "PostgreSQL",
-                    "description": "Base de datos."
+                    "description": "Base de datos"
                 },
-                "supasbase": {
+                "supabase": {
                     "name": "Supabase",
-                    "description": "Plataforma de almacenamiento."
+                    "description": "Plataforma de almacenamiento"
                 },
                 "flyio": {
                     "name": "Fly.io",
-                    "description": "Plataforma de alojamiento."
+                    "description": "Plataforma de alojamiento"
                 },
                 "vercel": {
                     "name": "Vercel",
-                    "description": "Plataforma de alojamiento."
+                    "description": "Plataforma de alojamiento"
                 }
             }
         },

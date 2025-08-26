@@ -59,7 +59,7 @@
             "strong": "VALOROSO",
             "description": "Criando interfaces intuitivas e funcionais, agregando valor à qualidade do produto.",
             "numbers": {
-                "years": "ANOS DE EXPERIÊNCIA",
+                "years": "ANO DE EXPERIÊNCIA",
                 "projects": "PROJETOS COMPLETOS",
                 "products": "PRODUTO LANÇADO"
             },
@@ -80,7 +80,7 @@
                 }
             }
         },
-        "expierence": {
+        "experience": {
             "title": "ANOS DE",
             "strong": "EXPERIÊNCIA",
             "companies": {
@@ -98,43 +98,43 @@
             "items": {
                 "java": {
                     "name": "Java",
-                    "description": "Linguagem de programação."
+                    "description": "Linguagem de programação"
                 },
                 "spring": {
                     "name": "Spring",
-                    "description": "Framework Java."
+                    "description": "Framework Java"
                 },
                 "docker": {
                     "name": "Docker",
-                    "description": "Plataforma de contêineres."
+                    "description": "Plataforma de contêineres"
                 },
                 "typescript": {
                     "name": "TypeScript",
-                    "description": "Linguagem de programação."
+                    "description": "Linguagem de programação"
                 },
                 "reactjs": {
                     "name": "React.js",
-                    "description": "Biblioteca JavaScript."
+                    "description": "Biblioteca JavaScript"
                 },
                 "nextjs": {
                     "name": "Next.js",
-                    "description": "Framework React."
+                    "description": "Framework React"
                 },
                 "postgres": {
                     "name": "PostgreSQL",
-                    "description": "Banco de dados."
+                    "description": "Banco de dados"
                 },
-                "supasbase": {
+                "supabase": {
                     "name": "Supabase",
-                    "description": "Plataforma de armazenamento."
+                    "description": "Plataforma de armazenamento"
                 },
                 "flyio": {
                     "name": "Fly.io",
-                    "description": "Plataforma de hospedagem."
+                    "description": "Plataforma de hospedagem"
                 },
                 "vercel": {
                     "name": "Vercel",
-                    "description": "Plataforma de hospedagem."
+                    "description": "Plataforma de hospedagem"
                 }
             }
         },

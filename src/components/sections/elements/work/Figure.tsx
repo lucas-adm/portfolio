@@ -1,3 +1,4 @@
+import { clsx } from "clsx";
 import Image from "next/image";
 
 type FigureProps = React.HTMLAttributes<HTMLElement> & {
@@ -7,14 +8,21 @@ type FigureProps = React.HTMLAttributes<HTMLElement> & {
 
 export const Figure = ({ figure, alt, ...rest }: FigureProps) => (
     <figure
-        className="overflow-hidden relative w-[333px] h-[200px] insm:w-[266px] bg-primary transition-colors duration-300"
+        className="[transform:translateZ(0)] overflow-hidden relative w-[333px] h-[200px] insm:w-[266px]"
         {...rest}
     >
         <Image
             fill
             src={figure}
             alt={alt}
-            className="pointer-events-none select-none origint-top object-cover transition-transform duration-666 group-hover:scale-175"
+            className={clsx(
+                'pointer-events-none select-none',
+                'object-cover origint-top',
+                'bg-primary',
+                'transition-all duration-666',
+                'group-hover:scale-175',
+                'group-focus-within:scale-175',
+            )}
         />
     </figure>
 )

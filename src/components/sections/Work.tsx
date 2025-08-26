@@ -12,7 +12,7 @@ export const Work = (props: React.HTMLAttributes<HTMLElement>) => {
     return (
         <Section
             aria-labelledby="work-title"
-            className="flex flex-col gap-12"
+            className="gap-12"
             {...props}
         >
             <header>
@@ -23,7 +23,12 @@ export const Work = (props: React.HTMLAttributes<HTMLElement>) => {
             <nav>
                 <ul className="flex flex-col inlg:items-center">
                     <Product>
-                        <Link href="/products/notehub" aria-labelledby="notehub-title" aria-describedby="notehub-desc">
+                        <Link 
+                        href="/products/notehub" 
+                        aria-labelledby="notehub-title" 
+                        aria-describedby="notehub-desc"
+                        className="outline-none"
+                        >
                             <Article>
                                 <Figure figure="/imgs/products/notehub.png" alt={t('sections.work.products.notehub.alt')} />
                                 <div className="p-4 flex flex-col gap-4">
