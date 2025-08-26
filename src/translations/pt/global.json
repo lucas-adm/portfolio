@@ -142,6 +142,7 @@
             "title": "VAMOS TRABALHAR",
             "strong": "JUNTOS",
             "form": {
+                "legend": "Contato",
                 "name": {
                     "label": "Nome",
                     "placeholder": "Seu nome"

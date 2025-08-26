@@ -142,6 +142,7 @@
             "title": "TRABAJEMOS",
             "strong": "JUNTOS",
             "form": {
+                "legend": "Contacto",
                 "name": {
                     "label": "Nombre",
                     "placeholder": "Tu nombre"

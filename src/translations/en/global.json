@@ -142,6 +142,7 @@
             "title": "LET'S WORK",
             "strong": "TOGETHER",
             "form": {
+                "legend": "Contact",
                 "name": {
                     "label": "Name",
                     "placeholder": "Your name"

@@ -11,6 +11,7 @@ export const Tools = (props: React.HTMLAttributes<HTMLElement>) => {
 
     return (
         <Section
+            id="tools"
             aria-labelledby="tools-title"
             className="gap-6"
             {...props}
