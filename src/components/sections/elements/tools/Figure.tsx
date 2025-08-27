@@ -5,13 +5,15 @@ type FigureProps = React.HTMLAttributes<HTMLElement> & {
 }
 
 export const Figure = ({ figure, ...rest }: FigureProps) => (
-    <figure className="p-2 rounded-xl bg-light" {...rest}>
-        <Image
-            src={figure}
-            alt=""
-            width={48}
-            height={48}
-            className="pointer-events-none select-none"
-        />
-    </figure>
+    <div className="p-2 rounded-xl bg-light">
+        <figure className="relative w-[48px] insm:w-[33px] h-[48px] insm:h-[33px] flex-none" {...rest}>
+            <Image
+                src={figure}
+                alt=""
+                fill
+                sizes="(max-width: 640px) 33px, 33px"
+                className="pointer-events-none select-none object-cover"
+            />
+        </figure>
+    </div>
 )

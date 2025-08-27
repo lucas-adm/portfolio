@@ -1,5 +1,6 @@
-import { Header } from "@/components";
+import { Header, SideMenu } from "@/components";
 import { LanguageProvider, PreferencesProvider } from "@/contexts";
+import { Profile } from "@/components/sections";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
 
@@ -7,7 +8,15 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <PreferencesProvider>
             <LanguageProvider>
                 <Header />
-                {children}
+                <SideMenu />
+                <main className="dark:bg-dark bg-light transition-colors duration-666">
+                    <div className="grid grid-cols-[40%_60%] inlg:grid-cols-1">
+                        <Profile />
+                        <div>
+                            {children}
+                        </div>
+                    </div>
+                </main>
             </LanguageProvider>
         </PreferencesProvider>
     )

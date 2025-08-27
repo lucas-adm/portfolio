@@ -12,7 +12,7 @@ export const Contact = (props: React.HTMLAttributes<HTMLElement>) => {
         <Section
             id="contact"
             aria-labelledby="contact-title"
-            className="gap-6"
+            className="gap-12"
             {...props}
         >
             <header>

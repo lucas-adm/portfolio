@@ -3,18 +3,24 @@ import { clsx } from "clsx";
 type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
     icon: React.ElementType;
     tooltip: string;
+    isActive: boolean;
+    navigateToId: string;
 }
 
-export const Button = ({ icon: Icon, tooltip, ...rest }: ButtonProps) => {
+export const Button = ({ icon: Icon, tooltip, isActive, navigateToId, ...rest }: ButtonProps) => {
 
-    const isActive = false;
+    const handleClick = () => {
+        const element = document.getElementById(navigateToId);
+        if (element) element.scrollIntoView({ behavior: "smooth", block: "start" });
+        return;
+    }
 
     return (
         <button
             type="button"
             aria-label={tooltip}
-            // aria-current="true"
-            title={tooltip}
+            aria-current={isActive}
+            onClick={handleClick}
             className={clsx(
                 'group cursor-pointer outline-primary',
                 'relative',

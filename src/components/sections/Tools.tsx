@@ -13,7 +13,7 @@ export const Tools = (props: React.HTMLAttributes<HTMLElement>) => {
         <Section
             id="tools"
             aria-labelledby="tools-title"
-            className="gap-6"
+            className="gap-12"
             {...props}
         >
             <header>
@@ -21,7 +21,7 @@ export const Tools = (props: React.HTMLAttributes<HTMLElement>) => {
                     {t('sections.tools.title')} <Strong>{t('sections.tools.strong')}</Strong>
                 </Title>
             </header>
-            <ul className="grid grid-cols-2 gap-x-3 gap-y-6 insm:grid-cols-1">
+            <ul className="grid grid-cols-2 gap-x-3 gap-y-6 insm:gap-x-1">
                 <Item>
                     <Link
                         href="https://java.com"

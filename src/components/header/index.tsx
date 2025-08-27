@@ -2,12 +2,44 @@
 
 import { Button } from "./elements";
 import { clsx } from "clsx";
-import { IconBriefcase2, IconFolder, IconHome, IconMail, IconTool } from "@tabler/icons-react";
+import { IconFolder, IconHome, IconMail, IconTool } from "@tabler/icons-react";
+import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 export const Header = (props: React.HTMLAttributes<HTMLElement>) => {
 
     const { t } = useTranslation("global");
+    const [activeId, setActiveId] = useState<string>('');
+
+    const items = useMemo(() => [
+        { id: 'home', icon: IconHome, label: t('header.links.home') },
+        { id: 'work', icon: IconFolder, label: t('header.links.work') },
+        // { id: 'experience', icon: IconBriefcase2, label: t('header.links.experience') },
+        { id: 'tools', icon: IconTool, label: t('header.links.tools') },
+        { id: 'contact', icon: IconMail, label: t('header.links.contact') },
+    ], [t]);
+
+    useEffect(() => {
+        const sections = items
+            .map(i => document.getElementById(i.id))
+            .filter(Boolean) as HTMLElement[];
+        if (sections.length) {
+            const observer = new IntersectionObserver(
+                entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) setActiveId(entry.target.id)
+                    })
+                },
+                {
+                    root: null,
+                    threshold: 0.666
+                }
+            )
+            sections.forEach(s => observer.observe(s));
+            return () => observer.disconnect();
+        }
+        return;
+    }, [items])
 
     return (
         <header aria-label="Main navigation"
@@ -22,11 +54,16 @@ export const Header = (props: React.HTMLAttributes<HTMLElement>) => {
         >
             <nav>
                 <ul className="flex items-center gap-6">
-                    <li><Button icon={IconHome} tooltip={t('header.links.home')} /></li>
-                    <li><Button icon={IconFolder} tooltip={t('header.links.work')} /></li>
-                    <li><Button icon={IconBriefcase2} tooltip={t('header.links.experience')} /></li>
-                    <li><Button icon={IconTool} tooltip={t('header.links.tools')} /></li>
-                    <li><Button icon={IconMail} tooltip={t('header.links.contact')} /></li>
+                    {items.map((item, key) => (
+                        <li key={key}>
+                            <Button
+                                icon={item.icon}
+                                tooltip={item.label}
+                                isActive={activeId === item.id}
+                                navigateToId={item.id}
+                            />
+                        </li>
+                    ))}
                 </ul>
             </nav>
         </header>

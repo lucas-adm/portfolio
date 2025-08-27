@@ -1,7 +1,7 @@
 import { clsx } from "clsx";
 import { Ripple } from "@/components/misc";
 
-export const Invitation = ({ children, ...rest }: React.ButtonHTMLAttributes<HTMLButtonElement>) => {
+export const ToContact = ({ children, ...rest }: React.ButtonHTMLAttributes<HTMLButtonElement>) => {
 
     const handleClick = () => {
         const element = document.getElementById('contact');
