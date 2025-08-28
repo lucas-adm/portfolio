@@ -1,30 +1,39 @@
 import { clsx } from "clsx";
+import { usePathname } from "next/navigation";
+import NextLink, { LinkProps as NextLinkProps } from "next/link";
 
-type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
+type LinkProps = Omit<NextLinkProps, 'href'> & {
     icon: React.ElementType;
     tooltip: string;
     isActive: boolean;
     navigateToId: string;
 }
 
-export const Button = ({ icon: Icon, tooltip, isActive, navigateToId, ...rest }: ButtonProps) => {
+export const Link = ({ icon: Icon, tooltip, isActive, navigateToId, ...rest }: LinkProps) => {
 
-    const handleClick = () => {
-        const element = document.getElementById(navigateToId);
-        if (element) element.scrollIntoView({ behavior: "smooth", block: "start" });
-        return;
+    const pathname = usePathname();
+
+    const handleClick = (ev: React.MouseEvent<HTMLAnchorElement>): void => {
+        if (pathname === '/') {
+            ev.preventDefault();
+            const element = document.getElementById(navigateToId);
+            if (element) return element.scrollIntoView({ behavior: "smooth", block: "start" });
+            return;
+        }
+        return sessionStorage.setItem('scrollTo', navigateToId);
     }
 
     return (
-        <button
-            type="button"
+        <NextLink
+            href={'/'}
             aria-label={tooltip}
             aria-current={isActive}
             onClick={handleClick}
             className={clsx(
-                'group cursor-pointer outline-primary',
+                'group outline-primary',
                 'relative',
                 'p-1 rounded-full',
+                'block',
                 'after:-z-10 after:origin-center',
                 'after:absolute after:inset-0 after:rounded-full',
                 isActive
@@ -51,7 +60,7 @@ export const Button = ({ icon: Icon, tooltip, isActive, navigateToId, ...rest }:
             >
                 {tooltip}
             </span>
-        </button>
+        </NextLink>
     )
 
 }

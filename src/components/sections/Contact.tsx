@@ -17,7 +17,7 @@ export const Contact = (props: React.HTMLAttributes<HTMLElement>) => {
         >
             <header>
                 <Title id="contact-title">
-                    {t('sections.contact.title')} <Strong>{t('sections.contact.strong')}</Strong>
+                    {t('pages.main.sections.contact.title')} <Strong>{t('pages.main.sections.contact.strong')}</Strong>
                 </Title>
             </header>
             <form action="https://api.staticforms.xyz/submit" method="POST">
@@ -25,21 +25,21 @@ export const Contact = (props: React.HTMLAttributes<HTMLElement>) => {
                 <input type="hidden" name="redirectTo" value="https://devlucas.website/sent" />
                 <fieldset className="flex flex-col gap-6 inlg:gap-3">
                     <legend className="sr-only">
-                        {t('sections.contact.form.legend')}
+                        {t('pages.main.sections.contact.form.legend')}
                     </legend>
                     <div>
-                        <Label htmlFor="name">{t('sections.contact.form.name.label')}</Label>
-                        <Input id="name" name="name" placeholder={t('sections.contact.form.name.placeholder')} required />
+                        <Label htmlFor="name">{t('pages.main.sections.contact.form.name.label')}</Label>
+                        <Input id="name" name="name" placeholder={t('pages.main.sections.contact.form.name.placeholder')} required />
                     </div>
                     <div>
-                        <Label htmlFor="email">{t('sections.contact.form.email.label')}</Label>
-                        <Input id="email" name="email" type="email" placeholder={t('sections.contact.form.email.placeholder')} required />
+                        <Label htmlFor="email">{t('pages.main.sections.contact.form.email.label')}</Label>
+                        <Input id="email" name="email" type="email" placeholder={t('pages.main.sections.contact.form.email.placeholder')} required />
                     </div>
                     <div>
-                        <Label htmlFor="message">{t('sections.contact.form.message.label')}</Label>
-                        <Textarea id="message" name="message" rows={4} placeholder={t('sections.contact.form.message.placeholder')} required />
+                        <Label htmlFor="message">{t('pages.main.sections.contact.form.message.label')}</Label>
+                        <Textarea id="message" name="message" rows={4} placeholder={t('pages.main.sections.contact.form.message.placeholder')} required />
                     </div>
-                    <Submit>{t('sections.contact.form.button.text')}</Submit>
+                    <Submit>{t('pages.main.sections.contact.form.button.text')}</Submit>
                 </fieldset>
             </form>
         </Section>

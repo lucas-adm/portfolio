@@ -18,7 +18,7 @@ export const Photo = (props: React.HTMLAttributes<HTMLElement>) => {
             <Image
                 fill
                 src="https://placehold.co/240x280/png"
-                alt={t('sections.profile.photo.alt')}
+                alt={t('pages.main.sections.profile.photo.alt')}
                 className="pointer-events-none select-none object-cover"
             />
         </figure>

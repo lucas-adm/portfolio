@@ -18,7 +18,7 @@ export const Work = (props: React.HTMLAttributes<HTMLElement>) => {
         >
             <header>
                 <Title id="work-title">
-                    {t('sections.work.title')} <Strong>{t('sections.work.strong')}</Strong>
+                    {t('pages.main.sections.work.title')} <Strong>{t('pages.main.sections.work.strong')}</Strong>
                 </Title>
             </header>
             <nav>
@@ -31,12 +31,12 @@ export const Work = (props: React.HTMLAttributes<HTMLElement>) => {
                             className="outline-none"
                         >
                             <Article>
-                                <Figure figure="/imgs/products/notehub.png" alt={t('sections.work.products.notehub.alt')} />
+                                <Figure figure="/imgs/products/notehub/hero.png" alt={t('pages.main.sections.work.products.notehub.alt')} />
                                 <div className="p-4 flex flex-col gap-4">
-                                    <Titl id="notehub-title">{t('sections.work.products.notehub.name')}</Titl>
-                                    <Paragraph id="notehub-desc">{t('sections.work.products.notehub.description')}</Paragraph>
+                                    <Titl id="notehub-title">{t('pages.main.sections.work.products.notehub.name')}</Titl>
+                                    <Paragraph id="notehub-desc">{t('pages.main.sections.work.products.notehub.description')}</Paragraph>
                                 </div>
-                                <Status>{t('sections.work.products.notehub.status')}</Status>
+                                <Status>{t('pages.main.sections.work.products.notehub.status')}</Status>
                             </Article>
                         </Link>
                     </Product>

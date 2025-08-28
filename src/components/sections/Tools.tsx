@@ -18,7 +18,7 @@ export const Tools = (props: React.HTMLAttributes<HTMLElement>) => {
         >
             <header>
                 <Title id="tools-title">
-                    {t('sections.tools.title')} <Strong>{t('sections.tools.strong')}</Strong>
+                    {t('pages.main.sections.tools.title')} <Strong>{t('pages.main.sections.tools.strong')}</Strong>
                 </Title>
             </header>
             <ul className="grid grid-cols-2 gap-x-3 gap-y-6 insm:gap-x-1">
@@ -34,8 +34,8 @@ export const Tools = (props: React.HTMLAttributes<HTMLElement>) => {
                         <Article>
                             <Figure figure="/svgs/tools/java-original.svg" />
                             <div>
-                                <Titl id="java-title">{t('sections.tools.items.java.name')}</Titl>
-                                <Desc id="java-desc">{t('sections.tools.items.java.description')}</Desc>
+                                <Titl id="java-title">{t('pages.main.sections.tools.items.java.name')}</Titl>
+                                <Desc id="java-desc">{t('pages.main.sections.tools.items.java.description')}</Desc>
                             </div>
                         </Article>
                     </Link>
@@ -52,8 +52,8 @@ export const Tools = (props: React.HTMLAttributes<HTMLElement>) => {
                         <Article>
                             <Figure figure="/svgs/tools/spring-original.svg" />
                             <div>
-                                <Titl id="spring-title">{t('sections.tools.items.spring.name')}</Titl>
-                                <Desc id="spring-desc">{t('sections.tools.items.spring.description')}</Desc>
+                                <Titl id="spring-title">{t('pages.main.sections.tools.items.spring.name')}</Titl>
+                                <Desc id="spring-desc">{t('pages.main.sections.tools.items.spring.description')}</Desc>
                             </div>
                         </Article>
                     </Link>
@@ -70,8 +70,8 @@ export const Tools = (props: React.HTMLAttributes<HTMLElement>) => {
                         <Article>
                             <Figure figure="/svgs/tools/docker-original.svg" />
                             <div>
-                                <Titl id="docker-title">{t('sections.tools.items.docker.name')}</Titl>
-                                <Desc id="docker-desc">{t('sections.tools.items.docker.description')}</Desc>
+                                <Titl id="docker-title">{t('pages.main.sections.tools.items.docker.name')}</Titl>
+                                <Desc id="docker-desc">{t('pages.main.sections.tools.items.docker.description')}</Desc>
                             </div>
                         </Article>
                     </Link>
@@ -88,8 +88,8 @@ export const Tools = (props: React.HTMLAttributes<HTMLElement>) => {
                         <Article>
                             <Figure figure="/svgs/tools/typescript-original.svg" />
                             <div>
-                                <Titl id="typescript-title">{t('sections.tools.items.typescript.name')}</Titl>
-                                <Desc id="typescript-desc">{t('sections.tools.items.typescript.description')}</Desc>
+                                <Titl id="typescript-title">{t('pages.main.sections.tools.items.typescript.name')}</Titl>
+                                <Desc id="typescript-desc">{t('pages.main.sections.tools.items.typescript.description')}</Desc>
                             </div>
                         </Article>
                     </Link>
@@ -106,8 +106,8 @@ export const Tools = (props: React.HTMLAttributes<HTMLElement>) => {
                         <Article>
                             <Figure figure="/svgs/tools/react-original.svg" />
                             <div>
-                                <Titl id="react-title">{t('sections.tools.items.reactjs.name')}</Titl>
-                                <Desc id="react-desc">{t('sections.tools.items.reactjs.description')}</Desc>
+                                <Titl id="react-title">{t('pages.main.sections.tools.items.reactjs.name')}</Titl>
+                                <Desc id="react-desc">{t('pages.main.sections.tools.items.reactjs.description')}</Desc>
                             </div>
                         </Article>
                     </Link>
@@ -124,8 +124,8 @@ export const Tools = (props: React.HTMLAttributes<HTMLElement>) => {
                         <Article>
                             <Figure figure="/svgs/tools/nextjs-original.svg" />
                             <div>
-                                <Titl id="next-title">{t('sections.tools.items.nextjs.name')}</Titl>
-                                <Desc id="next-desc">{t('sections.tools.items.nextjs.description')}</Desc>
+                                <Titl id="next-title">{t('pages.main.sections.tools.items.nextjs.name')}</Titl>
+                                <Desc id="next-desc">{t('pages.main.sections.tools.items.nextjs.description')}</Desc>
                             </div>
                         </Article>
                     </Link>
@@ -142,8 +142,8 @@ export const Tools = (props: React.HTMLAttributes<HTMLElement>) => {
                         <Article>
                             <Figure figure="/svgs/tools/postgresql-original.svg" />
                             <div>
-                                <Titl id="postgres-title">{t('sections.tools.items.postgres.name')}</Titl>
-                                <Desc id="postgres-desc">{t('sections.tools.items.postgres.description')}</Desc>
+                                <Titl id="postgres-title">{t('pages.main.sections.tools.items.postgres.name')}</Titl>
+                                <Desc id="postgres-desc">{t('pages.main.sections.tools.items.postgres.description')}</Desc>
                             </div>
                         </Article>
                     </Link>
@@ -160,8 +160,8 @@ export const Tools = (props: React.HTMLAttributes<HTMLElement>) => {
                         <Article>
                             <Figure figure="/svgs/tools/supabase-original.svg" />
                             <div>
-                                <Titl id="supabase-title">{t('sections.tools.items.supabase.name')}</Titl>
-                                <Desc id="supabase-desc">{t('sections.tools.items.supabase.description')}</Desc>
+                                <Titl id="supabase-title">{t('pages.main.sections.tools.items.supabase.name')}</Titl>
+                                <Desc id="supabase-desc">{t('pages.main.sections.tools.items.supabase.description')}</Desc>
                             </div>
                         </Article>
                     </Link>
@@ -178,8 +178,8 @@ export const Tools = (props: React.HTMLAttributes<HTMLElement>) => {
                         <Article>
                             <Figure figure="/svgs/tools/flyio-original.svg" />
                             <div>
-                                <Titl id="flyio-title">{t('sections.tools.items.flyio.name')}</Titl>
-                                <Desc id="flyio-desc">{t('sections.tools.items.flyio.description')}</Desc>
+                                <Titl id="flyio-title">{t('pages.main.sections.tools.items.flyio.name')}</Titl>
+                                <Desc id="flyio-desc">{t('pages.main.sections.tools.items.flyio.description')}</Desc>
                             </div>
                         </Article>
                     </Link>
@@ -196,8 +196,8 @@ export const Tools = (props: React.HTMLAttributes<HTMLElement>) => {
                         <Article>
                             <Figure figure="/svgs/tools/vercel-original.svg" />
                             <div>
-                                <Titl id="vercel-title">{t('sections.tools.items.vercel.name')}</Titl>
-                                <Desc id="vercel-desc">{t('sections.tools.items.vercel.description')}</Desc>
+                                <Titl id="vercel-title">{t('pages.main.sections.tools.items.vercel.name')}</Titl>
+                                <Desc id="vercel-desc">{t('pages.main.sections.tools.items.vercel.description')}</Desc>
                             </div>
                         </Article>
                     </Link>

@@ -1,17 +1,21 @@
 'use client';
 
-import { Button } from "./elements";
 import { clsx } from "clsx";
 import { IconFolder, IconHome, IconMail, IconTool } from "@tabler/icons-react";
+import { Link } from "./elements";
 import { useEffect, useMemo, useState } from "react";
+import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
 
 export const Header = (props: React.HTMLAttributes<HTMLElement>) => {
 
     const { t } = useTranslation("global");
+
+    const pathname = usePathname();
+
     const [activeId, setActiveId] = useState<string>('');
 
-    const items = useMemo(() => [
+    const items: { id: string, icon: React.ElementType, label: string }[] = useMemo(() => [
         { id: 'home', icon: IconHome, label: t('header.links.home') },
         { id: 'work', icon: IconFolder, label: t('header.links.work') },
         // { id: 'experience', icon: IconBriefcase2, label: t('header.links.experience') },
@@ -20,6 +24,7 @@ export const Header = (props: React.HTMLAttributes<HTMLElement>) => {
     ], [t]);
 
     useEffect(() => {
+        if (pathname !== '/') return setActiveId('');
         const sections = items
             .map(i => document.getElementById(i.id))
             .filter(Boolean) as HTMLElement[];
@@ -39,10 +44,10 @@ export const Header = (props: React.HTMLAttributes<HTMLElement>) => {
             return () => observer.disconnect();
         }
         return;
-    }, [items])
+    }, [items, pathname])
 
     return (
-        <header aria-label="Main navigation"
+        <header
             className={clsx(
                 'z-800',
                 'fixed top-10 left-1/2 -translate-x-1/2',
@@ -52,11 +57,11 @@ export const Header = (props: React.HTMLAttributes<HTMLElement>) => {
             )}
             {...props}
         >
-            <nav>
+            <nav aria-label={t('header.navAriaLabel')}>
                 <ul className="flex items-center gap-6">
                     {items.map((item, key) => (
                         <li key={key}>
-                            <Button
+                            <Link
                                 icon={item.icon}
                                 tooltip={item.label}
                                 isActive={activeId === item.id}

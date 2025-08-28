@@ -18,32 +18,32 @@ export const Home = (props: React.HTMLAttributes<HTMLElement>) => {
         >
             <header className="flex flex-col gap-6">
                 <Title id="home-title">
-                    {t('sections.home.title')} <Strong>{t('sections.home.strong')}</Strong>
+                    {t('pages.main.sections.home.title')} <Strong>{t('pages.main.sections.home.strong')}</Strong>
                 </Title>
                 <P id="home-desc">
-                    {t('sections.home.description')}
+                    {t('pages.main.sections.home.description')}
                 </P>
             </header>
             <dl className="my-6 flex items-center gap-12 inlg:justify-center insm:gap-6">
                 <D>
                     <DT>+1</DT>
-                    <DD>{t('sections.home.numbers.years')}</DD>
+                    <DD>{t('pages.main.sections.home.numbers.years')}</DD>
                 </D>
                 <D>
                     <DT>+22</DT>
-                    <DD>{t('sections.home.numbers.projects')}</DD>
+                    <DD>{t('pages.main.sections.home.numbers.projects')}</DD>
                 </D>
                 <D>
                     <DT>1</DT>
-                    <DD>{t('sections.home.numbers.products')}</DD>
+                    <DD>{t('pages.main.sections.home.numbers.products')}</DD>
                 </D>
             </dl>
             <nav
                 aria-labelledby="home-title"
                 className="flex items-center gap-6 inlg:justify-center"
             >
-                <ToContact>{t('sections.home.buttons.contact')}</ToContact>
-                <ToWork>{t('sections.home.buttons.work')}</ToWork>
+                <ToContact>{t('pages.main.sections.home.buttons.contact')}</ToContact>
+                <ToWork>{t('pages.main.sections.home.buttons.work')}</ToWork>
             </nav>
         </Section>
     )

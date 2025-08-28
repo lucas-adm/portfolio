@@ -34,29 +34,29 @@ export const SideCard = (props: React.HTMLAttributes<HTMLElement>) => {
             {...props}
         >
             <Photo />
-            <Name id="profile-title">{t('sections.profile.name')}</Name>
-            <Description id="profile-desc">{t('sections.profile.description')}</Description>
-            <Location>{t('sections.profile.location')}</Location>
+            <Name id="profile-title">{t('pages.main.sections.profile.name')}</Name>
+            <Description id="profile-desc">{t('pages.main.sections.profile.description')}</Description>
+            <Location>{t('pages.main.sections.profile.location')}</Location>
             <nav className="my-8">
                 <ul className="flex items-center gap-6">
                     <MediaItem
-                        aria-label={t('sections.profile.socials.github')}
+                        aria-label={t('pages.main.sections.profile.socials.github')}
                         href='https://github.com/lucas-adm'
                         icon={IconBrandGithub}
                     />
                     <MediaItem
-                        aria-label={t('sections.profile.socials.whatsapp')}
+                        aria-label={t('pages.main.sections.profile.socials.whatsapp')}
                         href='https://wa.me/5535998963318'
                         icon={IconBrandWhatsapp}
                     />
                     <MediaItem
-                        aria-label={t('sections.profile.socials.linkedin')}
+                        aria-label={t('pages.main.sections.profile.socials.linkedin')}
                         href='https://linkedin.com/in/lucas-admoraes'
                         icon={IconBrandLinkedin}
                     />
                 </ul>
             </nav>
-            <Invitation>{t('sections.profile.button')}</Invitation>
+            <Invitation>{t('pages.main.sections.profile.button')}</Invitation>
         </aside>
     )
 

@@ -11,7 +11,7 @@ export const Ripple = ({ color = "rgba(255,255,255,0.333)" }: RippleProps) => {
     const createRipple = useCallback((clientX: number, clientY: number): void => {
 
         const layer = layerRef.current;
-        const trigger = layer ? layer.closest('button') as HTMLButtonElement : null;
+        const trigger = layer ? layer.closest('button,a') as HTMLElement : null;
 
         if (!trigger || !layer) return;
 
@@ -58,7 +58,7 @@ export const Ripple = ({ color = "rgba(255,255,255,0.333)" }: RippleProps) => {
     useEffect(() => {
 
         const layer = layerRef.current;
-        const trigger = layer ? layer.closest('button') as HTMLButtonElement : null;
+        const trigger = layer ? layer.closest('button,a') as HTMLElement : null;
 
         if (!trigger || !layer) return;
 

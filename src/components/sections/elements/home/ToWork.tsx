@@ -28,6 +28,7 @@ export const ToWork = ({ children, ...rest }: React.ButtonHTMLAttributes<HTMLBut
         >
             <span>{children}</span>
             <IconArrowRight
+                aria-hidden="true"
                 className={clsx(
                     'transition-all duration-333',
                     'group-hover:translate-x-1.5',

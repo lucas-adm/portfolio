@@ -1,17 +1,27 @@
+'use client';
+
 import { clsx } from "clsx";
 import { Ripple } from "@/components/misc";
+import { usePathname } from "next/navigation";
+import Link, { LinkProps } from "next/link";
 
-export const Invitation = ({ children, ...rest }: React.ButtonHTMLAttributes<HTMLButtonElement>) => {
+export const Invitation = ({ children, ...rest }: Omit<LinkProps, 'href'> & React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
 
-    const handleClick = () => {
-        const element = document.getElementById('contact');
-        if (element) element.scrollIntoView({ behavior: "smooth", block: "start" });
-        return;
+    const pathname = usePathname();
+
+    const handleClick = (ev: React.MouseEvent<HTMLAnchorElement>): void => {
+        if (pathname === '/') {
+            ev.preventDefault();
+            const element = document.getElementById('contact');
+            if (element) return element.scrollIntoView({ behavior: "smooth", block: "start" });
+            return;
+        }
+        return sessionStorage.setItem('scrollTo', 'contact');
     }
 
     return (
-        <button
-            type="button"
+        <Link
+            href={'/'}
             onClick={handleClick}
             className={clsx(
                 'cursor-pointer outline-offset-2 outline-primary',
@@ -29,7 +39,7 @@ export const Invitation = ({ children, ...rest }: React.ButtonHTMLAttributes<HTM
         >
             <Ripple />
             {children}
-        </button>
+        </Link>
     )
 
 }
