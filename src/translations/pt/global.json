@@ -1,5 +1,6 @@
 {
     "header": {
+        "navAriaLabel": "Navegação principal do site",
         "links": {
             "home": "Início",
             "work": "Trabalho",
@@ -39,124 +40,186 @@
             }
         }
     },
-    "sections": {
-        "profile": {
-            "photo": {
-                "alt": "Foto do Lucas"
-            },
-            "name": "Lucas A. de Moraes",
-            "description": "Desenvolvedor Full Stack",
-            "location": "Sul de Minas, Brasil",
-            "socials": {
-                "linkedin": "Abrir LinkedIn em nova aba",
-                "whatsapp": "Abrir WhatsApp em nova aba",
-                "github": "Abrir GitHub em nova aba"
-            },
-            "button": "Chama"
-        },
-        "home": {
-            "title": "DO SIMPLES AO",
-            "strong": "VALOROSO",
-            "description": "Criando interfaces intuitivas e funcionais, agregando valor à qualidade do produto.",
-            "numbers": {
-                "years": "ANO DE EXPERIÊNCIA",
-                "projects": "PROJETOS COMPLETOS",
-                "products": "PRODUTO LANÇADO"
-            },
-            "buttons": {
-                "contact": "Chama",
-                "work": "Meu trampo"
-            }
-        },
-        "work": {
-            "title": "PRODUTOS MAIS",
-            "strong": "RECENTES",
-            "products": {
-                "notehub": {
-                    "alt": "Foto da rede social NoteHub",
-                    "name": "NoteHub",
-                    "description": "Rede Social",
-                    "status": "Ao vivo"
+    "pages": {
+        "main": {
+            "sections": {
+                "profile": {
+                    "photo": {
+                        "alt": "Foto do Lucas"
+                    },
+                    "name": "Lucas A. de Moraes",
+                    "description": "Desenvolvedor Full Stack",
+                    "location": "Sul de Minas, Brasil",
+                    "socials": {
+                        "linkedin": "Abrir LinkedIn em nova aba",
+                        "whatsapp": "Abrir WhatsApp em nova aba",
+                        "github": "Abrir GitHub em nova aba"
+                    },
+                    "button": "Chama"
+                },
+                "home": {
+                    "title": "DO SIMPLES AO",
+                    "strong": "VALOROSO",
+                    "description": "Criando interfaces intuitivas e funcionais, agregando valor à qualidade do produto.",
+                    "numbers": {
+                        "years": "ANO DE EXPERIÊNCIA",
+                        "projects": "PROJETOS COMPLETOS",
+                        "products": "PRODUTO LANÇADO"
+                    },
+                    "buttons": {
+                        "contact": "Chama",
+                        "work": "Meu trampo"
+                    }
+                },
+                "work": {
+                    "title": "PRODUTOS MAIS",
+                    "strong": "RECENTES",
+                    "products": {
+                        "notehub": {
+                            "alt": "Foto da rede social NoteHub",
+                            "name": "NoteHub",
+                            "description": "Rede Social",
+                            "status": "Ao vivo"
+                        }
+                    }
+                },
+                "experience": {
+                    "title": "ANOS DE",
+                    "strong": "EXPERIÊNCIA",
+                    "companies": {
+                        "NoteHub": {
+                            "name": "NoteHub",
+                            "description": "Fundador da aplicação por completa, responsável por toda a arquitetura, segurança, desenvolvimento, produção, mensageria e manutenção.",
+                            "role": "Desenvolvedor Full Stack",
+                            "period": "2024 - Present"
+                        }
+                    }
+                },
+                "tools": {
+                    "title": "PRINCIPAIS",
+                    "strong": "FERRAMENTAS",
+                    "items": {
+                        "java": {
+                            "name": "Java",
+                            "description": "Linguagem de programação"
+                        },
+                        "spring": {
+                            "name": "Spring",
+                            "description": "Framework Java"
+                        },
+                        "docker": {
+                            "name": "Docker",
+                            "description": "Plataforma de contêineres"
+                        },
+                        "typescript": {
+                            "name": "TypeScript",
+                            "description": "Linguagem de programação"
+                        },
+                        "reactjs": {
+                            "name": "React.js",
+                            "description": "Biblioteca JavaScript"
+                        },
+                        "nextjs": {
+                            "name": "Next.js",
+                            "description": "Framework React"
+                        },
+                        "postgres": {
+                            "name": "PostgreSQL",
+                            "description": "Banco de dados"
+                        },
+                        "supabase": {
+                            "name": "Supabase",
+                            "description": "Plataforma de armazenamento"
+                        },
+                        "flyio": {
+                            "name": "Fly.io",
+                            "description": "Plataforma de hospedagem"
+                        },
+                        "vercel": {
+                            "name": "Vercel",
+                            "description": "Plataforma de hospedagem"
+                        }
+                    }
+                },
+                "contact": {
+                    "title": "VAMOS TRABALHAR",
+                    "strong": "JUNTOS",
+                    "form": {
+                        "legend": "Contato",
+                        "name": {
+                            "label": "Nome",
+                            "placeholder": "Seu nome"
+                        },
+                        "email": {
+                            "label": "Email",
+                            "placeholder": "seu@email.com"
+                        },
+                        "message": {
+                            "label": "Mensagem",
+                            "placeholder": "Sua mensagem"
+                        },
+                        "button": {
+                            "text": "Enviar"
+                        }
+                    }
                 }
             }
         },
-        "experience": {
-            "title": "ANOS DE",
-            "strong": "EXPERIÊNCIA",
-            "companies": {
-                "NoteHub": {
-                    "name": "NoteHub",
-                    "description": "Fundador da aplicação por completa, responsável por toda a arquitetura, segurança, desenvolvimento, produção, mensageria e manutenção.",
-                    "role": "Desenvolvedor Full Stack",
-                    "period": "2024 - Present"
-                }
-            }
-        },
-        "tools": {
-            "title": "PRINCIPAIS",
-            "strong": "FERRAMENTAS",
-            "items": {
-                "java": {
-                    "name": "Java",
-                    "description": "Linguagem de programação"
+        "products": {
+            "goHome": "Produtos",
+            "notehub": {
+                "title": "NoteHub",
+                "subtitle": "Rede Social",
+                "description": "NoteHub é uma plataforma open-source que permite criar, organizar e compartilhar anotações em formato .txt. Desenvolvido com foco em simplicidade e usabilidade, é fácil de usar, intuitivo e aberto a contribuições da comunidade",
+                "view": "Ver ao vivo",
+                "navAriaLabel": "Links externos relacionados ao produto",
+                "roles": {
+                    "ulAriaLabel": "Lista de áreas de atuação no projeto NoteHub",
+                    "branding": {
+                        "title": "Visual",
+                        "description": "Responsável pela criação do logotipo, definição da estratégia de marca e desenvolvimento da identidade visual do projeto"
+                    },
+                    "development": {
+                        "title": "Desenvolvimento",
+                        "description": "Atuação na construção da interface interativa e dinâmica, aplicando código limpo e boas práticas de desenvolvimento"
+                    },
+                    "storage": {
+                        "title": "Armazenamento",
+                        "description": "Modelagem do banco de dados e integração de sistemas de armazenamento para as anotações"
+                    },
+                    "security": {
+                        "title": "Segurança",
+                        "description": "Implementação de autenticação, criptografia e práticas de proteção de dados"
+                    },
+                    "messaging": {
+                        "title": "Mensageria",
+                        "description": "Configuração e implementação do fluxo de e-mails transacionais"
+                    },
+                    "deploy": {
+                        "title": "Implantação",
+                        "description": "Configuração do pipeline de deploy contínuo e monitoramento da aplicação em produção"
+                    }
                 },
-                "spring": {
-                    "name": "Spring",
-                    "description": "Framework Java"
-                },
-                "docker": {
-                    "name": "Docker",
-                    "description": "Plataforma de contêineres"
-                },
-                "typescript": {
-                    "name": "TypeScript",
-                    "description": "Linguagem de programação"
-                },
-                "reactjs": {
-                    "name": "React.js",
-                    "description": "Biblioteca JavaScript"
-                },
-                "nextjs": {
-                    "name": "Next.js",
-                    "description": "Framework React"
-                },
-                "postgres": {
-                    "name": "PostgreSQL",
-                    "description": "Banco de dados"
-                },
-                "supabase": {
-                    "name": "Supabase",
-                    "description": "Plataforma de armazenamento"
-                },
-                "flyio": {
-                    "name": "Fly.io",
-                    "description": "Plataforma de hospedagem"
-                },
-                "vercel": {
-                    "name": "Vercel",
-                    "description": "Plataforma de hospedagem"
-                }
-            }
-        },
-        "contact": {
-            "title": "VAMOS TRABALHAR",
-            "strong": "JUNTOS",
-            "form": {
-                "legend": "Contato",
-                "name": {
-                    "label": "Nome",
-                    "placeholder": "Seu nome"
-                },
-                "email": {
-                    "label": "Email",
-                    "placeholder": "seu@email.com"
-                },
-                "message": {
-                    "label": "Mensagem",
-                    "placeholder": "Sua mensagem"
-                },
-                "button": {
-                    "text": "Enviar"
+                "images": {
+                    "hero": {
+                        "alt": "Visão geral da rede social NoteHub"
+                    },
+                    "ulAriaLabel": "Galeria de imagens das telas do produto",
+                    "1": {
+                        "alt": "Tela inicial do NoteHub"
+                    },
+                    "2": {
+                        "alt": "Página de perfil de usuário no NoteHub"
+                    },
+                    "3": {
+                        "alt": "Feed de usuário exibindo anotações no NoteHub"
+                    },
+                    "4": {
+                        "alt": "Tela de notificações de usuário no NoteHub"
+                    },
+                    "5": {
+                        "alt": "Interface do NoteHub com alteração da cor predominante"
+                    }
                 }
             }
         }

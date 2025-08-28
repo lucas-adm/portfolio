@@ -1,12 +1,12 @@
-import { Home, Tools, Work, Contact } from "@/components/sections";
+import { ScrollToOnLoad, Home, Work, Tools, Contact } from "@/components/sections";
 
 const Page = () => (
-    <div>
+    <ScrollToOnLoad>
         <Home />
         <Work />
         <Tools />
         <Contact />
-    </div>
+    </ScrollToOnLoad>
 )
 
 export default Page;
