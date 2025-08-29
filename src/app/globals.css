@@ -34,6 +34,7 @@
 @custom-variant inlg (@media (max-width: 1024px));
 @custom-variant inmd (@media (max-width: 768px));
 @custom-variant insm (@media (max-width: 640px));
+@custom-variant inxs (@media (max-width: 333px));
 
 @utility outline-custom {
   @apply outline-offset-4 dark:outline-offset-0 outline-primary;

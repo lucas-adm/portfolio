@@ -6,7 +6,7 @@ type FigureProps = React.HTMLAttributes<HTMLElement> & {
 
 export const Figure = ({ figure, ...rest }: FigureProps) => (
     <div className="p-2 rounded-xl bg-light">
-        <figure className="relative w-[48px] insm:w-[33px] h-[48px] insm:h-[33px] flex-none" {...rest}>
+        <figure className="relative w-[48px] h-[48px] insm:w-[33px] insm:h-[33px] inxs:w-[24px] inxs:h-[24px] flex-none" {...rest}>
             <Image
                 src={figure}
                 alt=""
