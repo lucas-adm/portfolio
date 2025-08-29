@@ -2,6 +2,7 @@
     "header": {
         "navAriaLabel": "Navegación principal del sitio",
         "links": {
+            "profile": "Sobre mí",
             "home": "Inicio",
             "work": "Trabajo",
             "experience": "Experiencia",

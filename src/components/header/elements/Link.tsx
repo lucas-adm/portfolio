@@ -30,7 +30,7 @@ export const Link = ({ icon: Icon, tooltip, isActive, navigateToId, ...rest }: L
             aria-current={isActive}
             onClick={handleClick}
             className={clsx(
-                'group outline-primary',
+                'group outline-primary whitespace-nowrap',
                 'relative',
                 'p-1 rounded-full',
                 'block',

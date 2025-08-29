@@ -1,7 +1,7 @@
 'use client';
 
 import { clsx } from "clsx";
-import { IconFolder, IconHome, IconMail, IconTool } from "@tabler/icons-react";
+import { IconFolder, IconHome, IconMail, IconTool, IconUser } from "@tabler/icons-react";
 import { Link } from "./elements";
 import { useEffect, useMemo, useState } from "react";
 import { usePathname } from "next/navigation";
@@ -15,12 +15,13 @@ export const Header = (props: React.HTMLAttributes<HTMLElement>) => {
 
     const [activeId, setActiveId] = useState<string>('');
 
-    const items: { id: string, icon: React.ElementType, label: string }[] = useMemo(() => [
-        { id: 'home', icon: IconHome, label: t('header.links.home') },
-        { id: 'work', icon: IconFolder, label: t('header.links.work') },
-        // { id: 'experience', icon: IconBriefcase2, label: t('header.links.experience') },
-        { id: 'tools', icon: IconTool, label: t('header.links.tools') },
-        { id: 'contact', icon: IconMail, label: t('header.links.contact') },
+    const items: { id: string, hide: boolean, icon: React.ElementType, label: string }[] = useMemo(() => [
+        { id: 'profile', hide: true, icon: IconUser, label: t('header.links.profile') },
+        { id: 'home', hide: false, icon: IconHome, label: t('header.links.home') },
+        { id: 'work', hide: false, icon: IconFolder, label: t('header.links.work') },
+        // { id: 'experience', hide: false, icon: IconBriefcase2, label: t('header.links.experience') },
+        { id: 'tools', hide: false, icon: IconTool, label: t('header.links.tools') },
+        { id: 'contact', hide: false, icon: IconMail, label: t('header.links.contact') },
     ], [t]);
 
     useEffect(() => {
@@ -59,9 +60,9 @@ export const Header = (props: React.HTMLAttributes<HTMLElement>) => {
             {...props}
         >
             <nav aria-label={t('header.navAriaLabel')}>
-                <ul className="flex items-center gap-6">
+                <ul className="flex items-center gap-6 insm:gap-4">
                     {items.map((item, key) => (
-                        <li key={key}>
+                        <li key={key} aria-hidden={item.hide} className={`${item.hide ? 'hidden inlg:block' : 'block'}`}>
                             <Link
                                 icon={item.icon}
                                 tooltip={item.label}

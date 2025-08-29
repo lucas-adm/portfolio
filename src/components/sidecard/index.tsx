@@ -14,7 +14,7 @@ export const SideCard = (props: React.HTMLAttributes<HTMLElement>) => {
             className={clsx(
                 'overflow-hidden relative',
                 'max-w-full w-[344px] max-h-full h-[640px] rounded-xl',
-                'insm:h-[95svh]',
+                'inlg:w-full inlg:h-full inlg:rounded-none',
                 'flex flex-col items-center justify-center',
                 'dark:bg-light/5 bg-dark/5',
                 'transition-colors duration-666',

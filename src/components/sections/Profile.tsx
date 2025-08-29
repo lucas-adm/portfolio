@@ -14,7 +14,7 @@ export const Profile = (props: React.HTMLAttributes<HTMLElement>) => {
             aria-labelledby="profile-title"
             aria-describedby="profile-desc"
             className={clsx(
-                'sticky top-0 left-0 h-screen px-2 py-4',
+                'sticky top-0 left-0 h-screen px-2 py-4 inlg:p-0',
                 'flex items-center justify-end',
                 'inlg:static inlg:justify-center',
                 'inmd:h-svh',
