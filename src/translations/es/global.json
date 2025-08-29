@@ -225,6 +225,13 @@
         }
     },
     "footer": {
-        "text": "Hecho por Lucas A. de Moraes"
+        "author": {
+            "text": "Hecho por",
+            "name": "Lucas"
+        },
+        "tech": {
+            "text": "Desarrollado con",
+            "name": "Next.js"
+        }
     }
 }

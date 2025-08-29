@@ -142,8 +142,8 @@
                     }
                 },
                 "contact": {
-                    "title": "VAMOS TRABALHAR",
-                    "strong": "JUNTOS",
+                    "title": "CHAMA NA",
+                    "strong": "CARTINHA",
                     "form": {
                         "legend": "Contato",
                         "name": {
@@ -225,6 +225,13 @@
         }
     },
     "footer": {
-        "text": "Feito por Lucas A. de Moraes"
+        "author": {
+            "text": "Feito por",
+            "name": "Lucas"
+        },
+        "tech": {
+            "text": "Desenvolvido com",
+            "name": "Next.js"
+        }
     }
 }
