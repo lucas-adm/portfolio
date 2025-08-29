@@ -1,0 +1,250 @@
+{
+    "header": {
+        "navAriaLabel": "ניווט ראשי באתר",
+        "links": {
+            "profile": "אודות",
+            "home": "בית",
+            "work": "עבודה",
+            "experience": "ניסיון",
+            "tools": "כלים",
+            "contact": "צור קשר"
+        }
+    },
+    "aside": {
+        "buttons": {
+            "language": {
+                "alt": "דגל ישראל",
+                "label": "שפה"
+            },
+            "theme": {
+                "label": "ערכת נושא"
+            }
+        },
+        "dropdowns": {
+            "language": {
+                "pt": {
+                    "alt": "דגל ברזיל",
+                    "label": "פורטוגזית"
+                },
+                "he": {
+                    "alt": "דגל ישראל",
+                    "label": "עברית"
+                },
+                "de": {
+                    "alt": "דגל גרמניה",
+                    "label": "גרמנית"
+                },
+                "en": {
+                    "alt": "דגל ארצות הברית",
+                    "label": "אנגלית"
+                },
+                "es": {
+                    "alt": "דגל ספרד",
+                    "label": "ספרדית"
+                },
+                "fr": {
+                    "alt": "דגל צרפת",
+                    "label": "צרפתית"
+                }
+            },
+            "theme": {
+                "dark": "כהה",
+                "light": "בהיר"
+            }
+        }
+    },
+    "pages": {
+        "main": {
+            "sections": {
+                "profile": {
+                    "photo": {
+                        "alt": "תמונה של לוקאס"
+                    },
+                    "name": "Lucas A. de Moraes",
+                    "description": "מפתח פול-סטאק",
+                    "location": "דרום מינאס, ברזיל",
+                    "socials": {
+                        "linkedin": "פתח את LinkedIn בכרטיסייה חדשה",
+                        "whatsapp": "פתח את WhatsApp בכרטיסייה חדשה",
+                        "github": "פתח את GitHub בכרטיסייה חדשה"
+                    },
+                    "button": "יאללה נדבר"
+                },
+                "home": {
+                    "title": "מהפשוט אל",
+                    "strong": "המשמעותי",
+                    "description": "יוצר ממשקים אינטואיטיביים ופונקציונליים, שמוסיפים ערך לאיכות המוצר.",
+                    "numbers": {
+                        "years": "שנת ניסיון",
+                        "projects": "פרוייקטים שהושלמו",
+                        "products": "מוצר שיצא לאור"
+                    },
+                    "buttons": {
+                        "contact": "יאללה נדבר",
+                        "work": "העבודות שלי"
+                    }
+                },
+                "work": {
+                    "title": "המוצרים הכי",
+                    "strong": "עדכניים",
+                    "products": {
+                        "notehub": {
+                            "alt": "תמונה של רשת חברתית NoteHub",
+                            "name": "NoteHub",
+                            "description": "רשת חברתית",
+                            "status": "חי"
+                        }
+                    }
+                },
+                "experience": {
+                    "title": "שנות",
+                    "strong": "ניסיון",
+                    "companies": {
+                        "NoteHub": {
+                            "name": "NoteHub",
+                            "description": "מייסד האפליקציה כולה, אחראי על כל הארכיטקטורה, אבטחה, פיתוח, פרודקשן, מסרנות ותחזוקה.",
+                            "role": "מפתח פול-סטאק",
+                            "period": "2024 - עד היום"
+                        }
+                    }
+                },
+                "tools": {
+                    "title": "כלי",
+                    "strong": "עיקריים",
+                    "items": {
+                        "java": {
+                            "name": "Java",
+                            "description": "שפת תכנות"
+                        },
+                        "spring": {
+                            "name": "Spring",
+                            "description": "מסגרת Java"
+                        },
+                        "docker": {
+                            "name": "Docker",
+                            "description": "פלטפורמת קונטיינרים"
+                        },
+                        "typescript": {
+                            "name": "TypeScript",
+                            "description": "שפת תכנות"
+                        },
+                        "reactjs": {
+                            "name": "React.js",
+                            "description": "ספריית JavaScript"
+                        },
+                        "nextjs": {
+                            "name": "Next.js",
+                            "description": "פריימורק ל-React"
+                        },
+                        "postgres": {
+                            "name": "PostgreSQL",
+                            "description": "מסד נתונים"
+                        },
+                        "supabase": {
+                            "name": "Supabase",
+                            "description": "פלטפורמת אחסון"
+                        },
+                        "flyio": {
+                            "name": "Fly.io",
+                            "description": "פלטפורמת אירוח"
+                        },
+                        "vercel": {
+                            "name": "Vercel",
+                            "description": "פלטפורמת אירוח"
+                        }
+                    }
+                },
+                "contact": {
+                    "title": "בואו",
+                    "strong": "נרים יד",
+                    "form": {
+                        "legend": "יצירת קשר",
+                        "name": {
+                            "label": "שם",
+                            "placeholder": "השם שלך"
+                        },
+                        "email": {
+                            "label": "אימייל",
+                            "placeholder": "האימייל שלך"
+                        },
+                        "message": {
+                            "label": "הודעה",
+                            "placeholder": "ההודעה שלך"
+                        },
+                        "button": {
+                            "text": "שלח"
+                        }
+                    }
+                }
+            }
+        },
+        "products": {
+            "goHome": "מוצרים",
+            "notehub": {
+                "title": "NoteHub",
+                "subtitle": "רשת חברתית",
+                "description": "NoteHub היא פלטפורמה בקוד פתוח שמאפשרת ליצור, לארגן ולשתף הערות בפורמט .txt. מתוכננת עם דגש על פשטות ושימושיות — קלה לשימוש ופתוחה לתרומות מהקהילה.",
+                "view": "צפה באתר",
+                "navAriaLabel": "קישורים חיצוניים הקשורים למוצר",
+                "roles": {
+                    "ulAriaLabel": "רשימת תחומי אחריות בפרויקט NoteHub",
+                    "branding": {
+                        "title": "מיצוב חזותי",
+                        "description": "אחראי על יצירת הלוגו, הגדרת אסטרטגיית המותג ופיתוח זהות ויזואלית לפרויקט"
+                    },
+                    "development": {
+                        "title": "פיתוח",
+                        "description": "עבודה על בניית הממשק האינטראקטיבי והדינמי, תוך שימוש בקוד נקי ונהלי פיתוח טובים"
+                    },
+                    "storage": {
+                        "title": "אחסון",
+                        "description": "מניית מסד הנתונים ואינטגרציה של מערכות אחסון עבור ההערות"
+                    },
+                    "security": {
+                        "title": "אבטחה",
+                        "description": "מימוש אימות, הצפנה ופרקטיקות להגנת נתונים"
+                    },
+                    "messaging": {
+                        "title": "מערך הודעות",
+                        "description": "הגדרה ומימוש של זרימת מיילים טרנזקציוניים"
+                    },
+                    "deploy": {
+                        "title": "פריסה",
+                        "description": "הגדרת pipeline לפריסה רציפה וניטור האפליקציה בסביבת פרודקשן"
+                    }
+                },
+                "images": {
+                    "hero": {
+                        "alt": "מבט כולל על רשת NoteHub"
+                    },
+                    "ulAriaLabel": "גלריית תמונות של מסכי המוצר",
+                    "1": {
+                        "alt": "מסך הבית של NoteHub"
+                    },
+                    "2": {
+                        "alt": "דף פרופיל משתמש ב-NoteHub"
+                    },
+                    "3": {
+                        "alt": "פיד המשתמש המציג הערות ב-NoteHub"
+                    },
+                    "4": {
+                        "alt": "מסך ההתראות של המשתמש ב-NoteHub"
+                    },
+                    "5": {
+                        "alt": "ממשק NoteHub עם שינוי הצבע הראשי"
+                    }
+                }
+            }
+        }
+    },
+    "footer": {
+        "author": {
+            "text": "נוצר על ידי",
+            "name": "Lucas"
+        },
+        "tech": {
+            "text": "מופעל על ידי",
+            "name": "Next.js"
+        }
+    }
+}

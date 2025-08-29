@@ -26,13 +26,25 @@
                     "alt": "Flag of Brazil",
                     "label": "Portuguese"
                 },
+                "he": {
+                    "alt": "Flag of Israel",
+                    "label": "Hebrew"
+                },
+                "de": {
+                    "alt": "Flag of Germany",
+                    "label": "German"
+                },
                 "en": {
-                    "alt": "Flag of The United States",
+                    "alt": "Flag of the United States",
                     "label": "English"
                 },
                 "es": {
                     "alt": "Flag of Spain",
                     "label": "Spanish"
+                },
+                "fr": {
+                    "alt": "Flag of France",
+                    "label": "French"
                 }
             },
             "theme": {

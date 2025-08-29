@@ -1,0 +1,250 @@
+{
+    "header": {
+        "navAriaLabel": "Navigation principale du site",
+        "links": {
+            "profile": "À propos",
+            "home": "Accueil",
+            "work": "Travail",
+            "experience": "Expérience",
+            "tools": "Outils",
+            "contact": "Contact"
+        }
+    },
+    "aside": {
+        "buttons": {
+            "language": {
+                "alt": "Drapeau d'Israël",
+                "label": "Langue"
+            },
+            "theme": {
+                "label": "Thème"
+            }
+        },
+        "dropdowns": {
+            "language": {
+                "pt": {
+                    "alt": "Drapeau du Brésil",
+                    "label": "Portugais"
+                },
+                "he": {
+                    "alt": "Drapeau d'Israël",
+                    "label": "Hébreu"
+                },
+                "de": {
+                    "alt": "Drapeau d'Allemagne",
+                    "label": "Allemand"
+                },
+                "en": {
+                    "alt": "Drapeau du Royaume-Uni/USA",
+                    "label": "Anglais"
+                },
+                "es": {
+                    "alt": "Drapeau d'Espagne",
+                    "label": "Espagnol"
+                },
+                "fr": {
+                    "alt": "Drapeau de France",
+                    "label": "Français"
+                }
+            },
+            "theme": {
+                "dark": "Sombre",
+                "light": "Clair"
+            }
+        }
+    },
+    "pages": {
+        "main": {
+            "sections": {
+                "profile": {
+                    "photo": {
+                        "alt": "Photo de Lucas"
+                    },
+                    "name": "Lucas A. de Moraes",
+                    "description": "Développeur Full-Stack",
+                    "location": "Sud de Minas, Brésil",
+                    "socials": {
+                        "linkedin": "Ouvrir LinkedIn dans un nouvel onglet",
+                        "whatsapp": "Ouvrir WhatsApp dans un nouvel onglet",
+                        "github": "Ouvrir GitHub dans un nouvel onglet"
+                    },
+                    "button": "On discute ?"
+                },
+                "home": {
+                    "title": "Du simple",
+                    "strong": "à l'essentiel",
+                    "description": "Je conçois des interfaces intuitives et fonctionnelles qui apportent une vraie valeur au produit.",
+                    "numbers": {
+                        "years": "années d'expérience",
+                        "projects": "projets terminés",
+                        "products": "produits publiés"
+                    },
+                    "buttons": {
+                        "contact": "On discute ?",
+                        "work": "Mes réalisations"
+                    }
+                },
+                "work": {
+                    "title": "Les produits",
+                    "strong": "les plus récents",
+                    "products": {
+                        "notehub": {
+                            "alt": "Capture d'écran du réseau social NoteHub",
+                            "name": "NoteHub",
+                            "description": "Réseau social",
+                            "status": "En ligne"
+                        }
+                    }
+                },
+                "experience": {
+                    "title": "Années",
+                    "strong": "d'expérience",
+                    "companies": {
+                        "NoteHub": {
+                            "name": "NoteHub",
+                            "description": "Fondateur de l'application complète — responsable de l'architecture, de la sécurité, du développement, de la production, du messaging et de la maintenance.",
+                            "role": "Développeur Full-Stack",
+                            "period": "2024 - aujourd'hui"
+                        }
+                    }
+                },
+                "tools": {
+                    "title": "Outils",
+                    "strong": "principaux",
+                    "items": {
+                        "java": {
+                            "name": "Java",
+                            "description": "Langage de programmation"
+                        },
+                        "spring": {
+                            "name": "Spring",
+                            "description": "Framework Java"
+                        },
+                        "docker": {
+                            "name": "Docker",
+                            "description": "Plateforme de conteneurs"
+                        },
+                        "typescript": {
+                            "name": "TypeScript",
+                            "description": "Langage de programmation"
+                        },
+                        "reactjs": {
+                            "name": "React.js",
+                            "description": "Bibliothèque JavaScript"
+                        },
+                        "nextjs": {
+                            "name": "Next.js",
+                            "description": "Framework pour React"
+                        },
+                        "postgres": {
+                            "name": "PostgreSQL",
+                            "description": "Base de données"
+                        },
+                        "supabase": {
+                            "name": "Supabase",
+                            "description": "Plateforme de stockage/hosting"
+                        },
+                        "flyio": {
+                            "name": "Fly.io",
+                            "description": "Plateforme d'hébergement"
+                        },
+                        "vercel": {
+                            "name": "Vercel",
+                            "description": "Plateforme d'hébergement"
+                        }
+                    }
+                },
+                "contact": {
+                    "title": "Allez,",
+                    "strong": "parlons",
+                    "form": {
+                        "legend": "Contact",
+                        "name": {
+                            "label": "Nom",
+                            "placeholder": "Votre nom"
+                        },
+                        "email": {
+                            "label": "E-mail",
+                            "placeholder": "Votre e-mail"
+                        },
+                        "message": {
+                            "label": "Message",
+                            "placeholder": "Votre message"
+                        },
+                        "button": {
+                            "text": "Envoyer"
+                        }
+                    }
+                }
+            }
+        },
+        "products": {
+            "goHome": "Produits",
+            "notehub": {
+                "title": "NoteHub",
+                "subtitle": "Réseau social",
+                "description": "NoteHub est une plateforme open-source pour créer, organiser et partager des notes au format .txt. Conçue avec un accent sur la simplicité et l'ergonomie — facile à utiliser et ouverte aux contributions de la communauté.",
+                "view": "Voir le site",
+                "navAriaLabel": "Liens externes liés au produit",
+                "roles": {
+                    "ulAriaLabel": "Liste des responsabilités dans le projet NoteHub",
+                    "branding": {
+                        "title": "Identité visuelle",
+                        "description": "Responsable de la création du logo, de la stratégie de marque et de l'identité visuelle du projet"
+                    },
+                    "development": {
+                        "title": "Développement",
+                        "description": "Construction de l'interface interactive et dynamique en appliquant un code propre et les meilleures pratiques"
+                    },
+                    "storage": {
+                        "title": "Stockage",
+                        "description": "Conception de la base de données et intégration des systèmes de stockage pour les notes"
+                    },
+                    "security": {
+                        "title": "Sécurité",
+                        "description": "Mise en place de l'authentification, du chiffrement et des pratiques de protection des données"
+                    },
+                    "messaging": {
+                        "title": "Messagerie",
+                        "description": "Configuration et réalisation des flux d'e-mails transactionnels"
+                    },
+                    "deploy": {
+                        "title": "Déploiement",
+                        "description": "Mise en place des pipelines CI/CD et du monitoring en production"
+                    }
+                },
+                "images": {
+                    "hero": {
+                        "alt": "Vue d'ensemble de NoteHub"
+                    },
+                    "ulAriaLabel": "Galerie de captures d'écran du produit",
+                    "1": {
+                        "alt": "Page d'accueil de NoteHub"
+                    },
+                    "2": {
+                        "alt": "Page de profil utilisateur dans NoteHub"
+                    },
+                    "3": {
+                        "alt": "Fil d'actualités affichant des notes dans NoteHub"
+                    },
+                    "4": {
+                        "alt": "Page de notifications utilisateur de NoteHub"
+                    },
+                    "5": {
+                        "alt": "Interface NoteHub avec couleur primaire modifiée"
+                    }
+                }
+            }
+        }
+    },
+    "footer": {
+        "author": {
+            "text": "Créé par",
+            "name": "Lucas"
+        },
+        "tech": {
+            "text": "Propulsé par",
+            "name": "Next.js"
+        }
+    }
+}

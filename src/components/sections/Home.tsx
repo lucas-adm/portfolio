@@ -24,7 +24,7 @@ export const Home = (props: React.HTMLAttributes<HTMLElement>) => {
                     {t('pages.main.sections.home.description')}
                 </P>
             </header>
-            <dl className="my-6 flex items-center gap-12 inlg:justify-center insm:gap-6">
+            <dl className="my-6 flex items-center gap-12 inlg:justify-center insm:gap-6 inxs:gap-1">
                 <D>
                     <DT>+1</DT>
                     <DD>{t('pages.main.sections.home.numbers.years')}</DD>

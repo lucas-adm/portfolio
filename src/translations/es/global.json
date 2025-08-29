@@ -26,6 +26,14 @@
                     "alt": "Bandera de Brasil",
                     "label": "Portugués"
                 },
+                "he": {
+                    "alt": "Bandera de Israel",
+                    "label": "Hebreo"
+                },
+                "de": {
+                    "alt": "Bandera de Alemania",
+                    "label": "Alemán"
+                },
                 "en": {
                     "alt": "Bandera de Estados Unidos",
                     "label": "Inglés"
@@ -33,6 +41,10 @@
                 "es": {
                     "alt": "Bandera de España",
                     "label": "Español"
+                },
+                "fr": {
+                    "alt": "Bandera de Francia",
+                    "label": "Francés"
                 }
             },
             "theme": {

@@ -26,8 +26,11 @@ export const LanguageProvider = ({ children }: { children: React.ReactNode }) =>
                 lng: preferences.useLanguage,
                 resources: {
                     pt: { global: translation.pt },
+                    he: { global: translation.he },
+                    de: { global: translation.de },
                     en: { global: translation.en },
                     es: { global: translation.es },
+                    fr: { global: translation.fr },
                 },
             }).then(() => {
                 setReady(true);
