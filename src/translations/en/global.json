@@ -246,5 +246,6 @@
             "text": "Powered by",
             "name": "Next.js"
         }
-    }
+    },
+    "notFound": "Invalid route."
 }

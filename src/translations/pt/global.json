@@ -246,5 +246,6 @@
             "text": "Desenvolvido com",
             "name": "Next.js"
         }
-    }
+    },
+    "notFound": "Rota inválida."
 }

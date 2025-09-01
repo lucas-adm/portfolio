@@ -246,5 +246,6 @@
             "text": "Propulsé par",
             "name": "Next.js"
         }
-    }
+    },
+    "notFound": "Route invalide."
 }

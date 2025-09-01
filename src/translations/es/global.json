@@ -246,5 +246,6 @@
             "text": "Desarrollado con",
             "name": "Next.js"
         }
-    }
+    },
+    "notFound": "Ruta inválida."
 }

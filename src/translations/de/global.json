@@ -246,5 +246,6 @@
             "text": "Angetrieben von",
             "name": "Next.js"
         }
-    }
+    },
+    "notFound": "Ungültige Route."
 }
