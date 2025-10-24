@@ -1,4 +1,4 @@
-import { Footer, Header, SideMenu, SplashScreen } from "@/components";
+import { Footer, Header, SideMenu } from "@/components";
 import { LanguageProvider, PreferencesProvider } from "@/contexts";
 import { Profile } from "@/components/sections";
 
@@ -7,7 +7,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     return (
         <PreferencesProvider>
             <LanguageProvider>
-                <SplashScreen />
+                {/* <SplashScreen /> */}
                 <Header />
                 <SideMenu />
                 <main className="dark:bg-dark bg-light transition-colors duration-666">
