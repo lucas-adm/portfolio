@@ -1,6 +1,7 @@
 import { Footer, Header, SideMenu } from "@/components";
 import { LanguageProvider, PreferencesProvider } from "@/contexts";
 import { Profile } from "@/components/sections";
+import { ProgressBar } from "@/components/progressbar";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
 
@@ -8,6 +9,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <PreferencesProvider>
             <LanguageProvider>
                 {/* <SplashScreen /> */}
+                <ProgressBar />
                 <Header />
                 <SideMenu />
                 <main className="dark:bg-dark bg-light transition-colors duration-666">
