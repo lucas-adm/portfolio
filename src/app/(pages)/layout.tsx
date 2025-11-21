@@ -1,7 +1,7 @@
+import { BackToTop, ProgressBar } from "@/components/scroll-indicators";
 import { Footer, Header, SideMenu } from "@/components";
 import { LanguageProvider, PreferencesProvider } from "@/contexts";
 import { Profile } from "@/components/sections";
-import { ProgressBar } from "@/components/progressbar";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
 
@@ -10,6 +10,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <LanguageProvider>
                 {/* <SplashScreen /> */}
                 <ProgressBar />
+                <BackToTop />
                 <Header />
                 <SideMenu />
                 <main className="dark:bg-dark bg-light transition-colors duration-666">
