@@ -1,4 +1,5 @@
 import { clsx } from "clsx";
+import { navigateToItem } from "@/utils";
 import { usePathname } from "next/navigation";
 import NextLink, { LinkProps as NextLinkProps } from "next/link";
 
@@ -13,22 +14,12 @@ export const Link = ({ icon: Icon, tooltip, isActive, navigateToId, ...rest }: L
 
     const pathname = usePathname();
 
-    const handleClick = (ev: React.MouseEvent<HTMLAnchorElement>): void => {
-        if (pathname === '/') {
-            ev.preventDefault();
-            const element = document.getElementById(navigateToId);
-            if (element) return element.scrollIntoView({ behavior: "smooth", block: "start" });
-            return;
-        }
-        return sessionStorage.setItem('scrollTo', navigateToId);
-    }
-
     return (
         <NextLink
             href={'/'}
             aria-label={tooltip}
             aria-current={isActive}
-            onClick={handleClick}
+            onClick={navigateToItem(pathname, navigateToId)}
             className={clsx(
                 'group outline-primary whitespace-nowrap',
                 'relative',

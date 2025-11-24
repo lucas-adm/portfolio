@@ -2,19 +2,20 @@
 
 import { clsx } from "clsx";
 import { IconArrowLeft } from "@tabler/icons-react";
+import { navigateToItem } from "@/utils";
+import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import Link, { LinkProps } from "next/link";
 
 export const GoHome = (props: Omit<LinkProps, 'href'>) => {
 
     const { t } = useTranslation("global");
-
-    const handleClick = () => sessionStorage.setItem('scrollTo', 'work');
+    const pathname = usePathname();
 
     return (
         <Link
             href='/'
-            onClickCapture={handleClick}
+            onClickCapture={navigateToItem(pathname, 'work')}
             className={clsx(
                 'group ',
                 'outline-primary outline-offset-4',

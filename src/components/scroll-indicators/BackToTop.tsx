@@ -14,7 +14,8 @@ export const BackToTop = () => {
     const isHidden = completion < 33;
 
     const handleBackToTop = (): void => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        const isReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        window.scrollTo({ top: 0, behavior: isReducedMotion ? 'instant' : 'smooth' });
         document.body.focus();
     }
 

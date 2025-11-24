@@ -1,26 +1,22 @@
 'use client';
 
-import { useEffect } from 'react';
+import { getScrollItem, removeScrollItem, scrollToItem } from '@/utils';
+import { useCallback, useEffect } from 'react';
 
 export const ScrollToOnLoad = (props: React.HTMLAttributes<HTMLDivElement>) => {
 
-    useEffect(() => {
-
-        const id = sessionStorage.getItem('scrollTo');
-
-        if (id) {
-            sessionStorage.removeItem('scrollTo');
-            const tryScroll = () => {
-                const el = document.getElementById(id);
-                if (el) return el.scrollIntoView({ behavior: 'instant', block: 'start' });
-                requestAnimationFrame(tryScroll);
-            }
-            return tryScroll();
-        }
-
-        return;
-
+    const tryScrollTo = useCallback((id: string) => {
+        scrollToItem(id, true)();
     }, [])
+
+    useEffect(() => {
+        const id = getScrollItem();
+        if (id) {
+            removeScrollItem();
+            return tryScrollTo(id);
+        }
+        return;
+    }, [tryScrollTo])
 
     return <div {...props} />
 

@@ -1,6 +1,7 @@
 'use client';
 
 import { clsx } from "clsx";
+import { navigateToItem } from "@/utils";
 import { Ripple } from "@/components/misc";
 import { usePathname } from "next/navigation";
 import Link, { LinkProps } from "next/link";
@@ -9,20 +10,10 @@ export const Invitation = ({ children, ...rest }: Omit<LinkProps, 'href'> & Reac
 
     const pathname = usePathname();
 
-    const handleClick = (ev: React.MouseEvent<HTMLAnchorElement>): void => {
-        if (pathname === '/') {
-            ev.preventDefault();
-            const element = document.getElementById('contact');
-            if (element) return element.scrollIntoView({ behavior: "smooth", block: "start" });
-            return;
-        }
-        return sessionStorage.setItem('scrollTo', 'contact');
-    }
-
     return (
         <Link
             href={'/'}
-            onClick={handleClick}
+            onClick={navigateToItem(pathname, 'contact')}
             className={clsx(
                 'cursor-pointer outline-offset-2 outline-primary',
                 'px-6 py-2 rounded',
