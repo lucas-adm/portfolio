@@ -13,7 +13,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 <BackToTop />
                 <Header />
                 <SideMenu />
-                <main className="dark:bg-dark bg-light transition-colors duration-666">
+                <main data-nosnippet className="dark:bg-dark bg-light transition-colors duration-666">
                     <div className="grid grid-cols-[40%_60%] inlg:grid-cols-1">
                         <Profile />
                         {children}
