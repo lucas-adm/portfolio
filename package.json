@@ -13,7 +13,7 @@
     "@tabler/icons-react": "^3.34.1",
     "clsx": "^2.1.1",
     "i18next": "^25.3.4",
-    "next": "15.4.6",
+    "next": "^15.5.9",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-i18next": "^15.6.1"
@@ -25,7 +25,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "15.4.6",
+    "eslint-config-next": "15.5.9",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
