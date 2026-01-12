@@ -34,9 +34,7 @@ export const PreferencesProvider = ({ children }: { children: React.ReactNode })
 
     useEffect(() => {
         const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-        const handleChange = (e: MediaQueryListEvent) => {
-            setter({ shouldUseDarkTheme: e.matches })
-        }
+        const handleChange = (e: MediaQueryListEvent) => setter({ shouldUseDarkTheme: e.matches });
         mediaQuery.addEventListener("change", handleChange);
         return () => mediaQuery.removeEventListener("change", handleChange);
     }, [setter])
