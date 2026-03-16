@@ -94,6 +94,12 @@
                             "name": "NoteHub",
                             "description": "Soziales Netzwerk",
                             "status": "Live"
+                        },
+                        "livechat": {
+                            "alt": "Bild der Messaging-Anwendung LiveChat",
+                            "name": "LiveChat",
+                            "description": "Messaging-Anwendung",
+                            "status": "Online"
                         }
                     }
                 },
@@ -233,6 +239,40 @@
                     },
                     "5": {
                         "alt": "NoteHub-Oberfläche mit geänderter Primärfarbe"
+                    }
+                }
+            },
+            "livechat": {
+                "title": "LiveChat",
+                "subtitle": "Messaging-Anwendung",
+                "description": "LiveChat ist ein Demonstrationsprojekt einer Echtzeit-Messaging-Anwendung, inspiriert von Plattformen wie WhatsApp und Telegram. Die Anwendung verwendet WebSockets, um eine sofortige Kommunikation zwischen Benutzern in einem gemeinsamen globalen Raum zu ermöglichen. Das Projekt wurde entwickelt, um Konzepte der Echtzeitkommunikation, Verbindungsverwaltung und die Architektur interaktiver Anwendungen zu erforschen.",
+                "view": "Live ansehen",
+                "navAriaLabel": "Externe Links zum Produkt",
+                "roles": {
+                    "ulAriaLabel": "Liste der Tätigkeitsbereiche im LiveChat-Projekt",
+                    "branding": {
+                        "title": "Design",
+                        "description": "Verantwortlich für die Erstellung des Logos, die Definition der Markenstrategie und die Entwicklung der visuellen Identität des Projekts"
+                    },
+                    "development": {
+                        "title": "Entwicklung",
+                        "description": "Mitwirkung am Aufbau der interaktiven und dynamischen Benutzeroberfläche unter Anwendung von Clean Code und Best Practices der Softwareentwicklung"
+                    },
+                    "storage": {
+                        "title": "Speicherung",
+                        "description": "Datenbankmodellierung und Integration von Speichersystemen"
+                    }
+                },
+                "images": {
+                    "hero": {
+                        "alt": "Übersicht der LiveChat-Anwendung"
+                    },
+                    "ulAriaLabel": "Galerie der Produktoberflächen",
+                    "1": {
+                        "alt": "Startbildschirm von LiveChat"
+                    },
+                    "2": {
+                        "alt": "Echtzeit-Chatbildschirm"
                     }
                 }
             }

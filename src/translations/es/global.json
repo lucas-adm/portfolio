@@ -94,6 +94,12 @@
                             "name": "NoteHub",
                             "description": "Red Social",
                             "status": "En vivo"
+                        },
+                        "livechat": {
+                            "alt": "Imagen de la aplicación de mensajería LiveChat",
+                            "name": "LiveChat",
+                            "description": "Aplicación de mensajería",
+                            "status": "En vivo"
                         }
                     }
                 },
@@ -233,6 +239,40 @@
                     },
                     "5": {
                         "alt": "Interfaz de NoteHub con personalización del color principal"
+                    }
+                }
+            },
+            "livechat": {
+                "title": "LiveChat",
+                "subtitle": "Aplicación de mensajería",
+                "description": "LiveChat es un proyecto demostrativo de una aplicación de mensajería en tiempo real, inspirado en plataformas como WhatsApp y Telegram. La aplicación utiliza WebSockets para permitir comunicación instantánea entre usuarios en una sala global compartida. El proyecto fue desarrollado con el objetivo de explorar conceptos de comunicación en tiempo real, gestión de conexiones y arquitectura de aplicaciones interactivas.",
+                "view": "Ver en vivo",
+                "navAriaLabel": "Enlaces externos relacionados con el producto",
+                "roles": {
+                    "ulAriaLabel": "Lista de áreas de actuación en el proyecto LiveChat",
+                    "branding": {
+                        "title": "Visual",
+                        "description": "Responsable de la creación del logotipo, definición de la estrategia de marca y desarrollo de la identidad visual del proyecto"
+                    },
+                    "development": {
+                        "title": "Desarrollo",
+                        "description": "Participación en la construcción de la interfaz interactiva y dinámica, aplicando código limpio y buenas prácticas de desarrollo"
+                    },
+                    "storage": {
+                        "title": "Almacenamiento",
+                        "description": "Modelado de la base de datos e integración de sistemas de almacenamiento"
+                    }
+                },
+                "images": {
+                    "hero": {
+                        "alt": "Vista general de la aplicación LiveChat"
+                    },
+                    "ulAriaLabel": "Galería de pantallas del producto",
+                    "1": {
+                        "alt": "Pantalla inicial de LiveChat"
+                    },
+                    "2": {
+                        "alt": "Pantalla de conversación en tiempo real"
                     }
                 }
             }

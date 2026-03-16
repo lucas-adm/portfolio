@@ -94,6 +94,12 @@
                             "name": "NoteHub",
                             "description": "Social Network",
                             "status": "Live"
+                        },
+                        "livechat": {
+                            "alt": "Photo of the LiveChat messaging application",
+                            "name": "LiveChat",
+                            "description": "Messaging Application",
+                            "status": "Live"
                         }
                     }
                 },
@@ -233,6 +239,40 @@
                     },
                     "5": {
                         "alt": "NoteHub interface with primary color customization"
+                    }
+                }
+            },
+            "livechat": {
+                "title": "LiveChat",
+                "subtitle": "Messaging Application",
+                "description": "LiveChat is a demonstration project of a real-time messaging application inspired by platforms such as WhatsApp and Telegram. The application uses WebSockets to enable instant communication between users in a shared global room. The project was developed with the goal of exploring real-time communication concepts, connection management, and the architecture of interactive applications.",
+                "view": "View live",
+                "navAriaLabel": "External links related to the product",
+                "roles": {
+                    "ulAriaLabel": "List of roles in the LiveChat project",
+                    "branding": {
+                        "title": "Branding",
+                        "description": "Responsible for creating the logo, defining the brand strategy, and developing the visual identity of the project"
+                    },
+                    "development": {
+                        "title": "Development",
+                        "description": "Worked on building the interactive and dynamic interface, applying clean code and development best practices"
+                    },
+                    "storage": {
+                        "title": "Storage",
+                        "description": "Database modeling and integration of storage systems"
+                    }
+                },
+                "images": {
+                    "hero": {
+                        "alt": "Overview of the LiveChat application"
+                    },
+                    "ulAriaLabel": "Gallery of product screens",
+                    "1": {
+                        "alt": "LiveChat home screen"
+                    },
+                    "2": {
+                        "alt": "Real-time conversation screen"
                     }
                 }
             }
