@@ -8,7 +8,7 @@ type FigureProps = React.HTMLAttributes<HTMLElement> & {
 
 export const Figure = ({ figure, alt, ...rest }: FigureProps) => (
     <figure
-        className="[transform:translateZ(0)] overflow-hidden relative w-[333px] h-[200px] insm:w-[266px]"
+        className="[transform:translateZ(0)] overflow-hidden relative min-w-[300px] inxl:min-w-[250px] insm:min-w-[266px] h-[200px]"
         {...rest}
     >
         <Image
