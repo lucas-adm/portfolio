@@ -1,6 +1,6 @@
 'use client';
 
-import { Desc, Hero, ToViewLive, Subtitle, Title, ToRepo, Role, Page as Image } from "./elements";
+import { Desc, Hero, ToViewLive, Subtitle, Title, ToRepo, Role, Page as Image } from "../shared";
 import { IconCode, IconDatabase, IconMail, IconRocket, IconShield, IconSparkles } from "@tabler/icons-react";
 import { useTranslation } from "react-i18next";
 
