@@ -27,7 +27,7 @@ export const Work = (props: React.HTMLAttributes<HTMLElement>) => {
                 </Title>
             </header>
             <nav>
-                <ul className="flex flex-wrap inlg:items-center justify-between gap-8">
+                <ul className="flex flex-wrap inlg:items-center justify-between insm:justify-center gap-8">
                     {products.map((p) => (
                         <Product key={p.slug}>
                             <Link
