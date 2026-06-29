@@ -190,9 +190,9 @@
             "notehub": {
                 "title": "NoteHub",
                 "subtitle": "Red Social",
-                "description": "NoteHub es una plataforma open-source que permite crear, organizar y compartir notas en formato .txt. Diseñada con enfoque en simplicidad y usabilidad, es fácil de usar, intuitiva y abierta a contribuciones de la comunidad.",
-                "navAriaLabel": "Enlaces externos relacionados con el producto",
+                "description": "NoteHub es una plataforma de código abierto para crear, organizar y compartir notas. Admite edición con resaltado de sintaxis y visualización en Markdown. Simple, intuitiva y abierta a contribuciones de la comunidad.",
                 "view": "Ver en vivo",
+                "navAriaLabel": "Enlaces externos relacionados con el producto",
                 "roles": {
                     "ulAriaLabel": "Lista de áreas de responsabilidad del proyecto NoteHub",
                     "branding": {

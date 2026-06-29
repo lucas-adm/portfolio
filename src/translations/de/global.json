@@ -190,7 +190,7 @@
             "notehub": {
                 "title": "NoteHub",
                 "subtitle": "Soziales Netzwerk",
-                "description": "NoteHub ist eine Open-Source-Plattform zum Erstellen, Organisieren und Teilen von Notizen im .txt-Format. Konzipiert mit Fokus auf Einfachheit und Benutzerfreundlichkeit — leicht zu verwenden und offen für Beiträge aus der Community.",
+                "description": "NoteHub ist eine Open-Source-Plattform zum Erstellen, Organisieren und Teilen von Notizen. Sie unterstützt die Bearbeitung mit Syntaxhervorhebung und Markdown-Vorschau. Einfach, intuitiv und offen für Beiträge aus der Community.",
                 "view": "Website ansehen",
                 "navAriaLabel": "Externe Links, die mit dem Produkt verbunden sind",
                 "roles": {
