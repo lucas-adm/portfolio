@@ -8,6 +8,16 @@ export const Home = (props: React.HTMLAttributes<HTMLElement>) => {
 
     const { t } = useTranslation("global");
 
+    const getYearsOfExperience = (dateStr: string) => {
+        const today = new Date();
+        const todayYear = today.getFullYear();
+        const date = new Date(dateStr);
+        let anniversaries = todayYear - date.getFullYear();
+        const anniversaryThisYear = new Date(todayYear, date.getMonth(), date.getDate());
+        if (anniversaryThisYear > today) anniversaries--;
+        return anniversaries;
+    }
+
     return (
         <Section
             id="home"
@@ -26,7 +36,7 @@ export const Home = (props: React.HTMLAttributes<HTMLElement>) => {
             </header>
             <dl className="my-6 flex items-center gap-12 inlg:justify-center insm:gap-6 inxs:gap-1">
                 <D>
-                    <DT>+1</DT>
+                    <DT>+{getYearsOfExperience("2024-08-09T17:32:30Z")}</DT>
                     <DD>{t('pages.main.sections.home.numbers.years')}</DD>
                 </D>
                 <D>
