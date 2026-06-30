@@ -11,6 +11,8 @@ type LanguageContextType = {
     setLanguage: (lng: Language) => void;
 }
 
+const RTL_LANGUAGES: Language[] = ['he'];
+
 export const LanguageContext = createContext<LanguageContextType>({} as LanguageContextType);
 
 export const LanguageProvider = ({ children }: { children: React.ReactNode }) => {
@@ -38,6 +40,13 @@ export const LanguageProvider = ({ children }: { children: React.ReactNode }) =>
             return;
         }
         return;
+    }, [preferences.useLanguage])
+
+    useEffect(() => {
+        if (preferences.useLanguage) {
+            document.documentElement.dir = RTL_LANGUAGES.includes(preferences.useLanguage) ? 'rtl' : 'ltr';
+            document.documentElement.lang = preferences.useLanguage;
+        }
     }, [preferences.useLanguage])
 
     const setLanguage = (lng: Language): void => {
