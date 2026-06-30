@@ -218,6 +218,10 @@
                     "deploy": {
                         "title": "Déploiement",
                         "description": "Mise en place des pipelines CI/CD et du monitoring en production"
+                    },
+                    "monetization": {
+                        "title": "Monétisation",
+                        "description": "Intégration avec Stripe pour la réception de dons à montant dynamique, permettant à toute contribution à partir du minimum de la plateforme d'attribuer à l'utilisateur le statut de sponsor"
                     }
                 },
                 "images": {

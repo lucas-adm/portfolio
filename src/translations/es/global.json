@@ -218,6 +218,10 @@
                     "deploy": {
                         "title": "Despliegue",
                         "description": "Configuración del pipeline de despliegue continuo y monitoreo de la aplicación en producción"
+                    },
+                    "monetization": {
+                        "title": "Monetización",
+                        "description": "Integración con Stripe para la recepción de donaciones con monto dinámico, permitiendo que cualquier contribución a partir del mínimo de la plataforma otorgue al usuario el estatus de patrocinador"
                     }
                 },
                 "images": {

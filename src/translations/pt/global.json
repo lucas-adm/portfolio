@@ -218,6 +218,10 @@
                     "deploy": {
                         "title": "Implantação",
                         "description": "Configuração do pipeline de deploy contínuo e monitoramento da aplicação em produção"
+                    },
+                    "monetization": {
+                        "title": "Monetização",
+                        "description": "Integração com a Stripe para recebimento de doações com valor dinâmico, permitindo que qualquer contribuição a partir do mínimo da plataforma garanta ao usuário o status de patrocinador"
                     }
                 },
                 "images": {

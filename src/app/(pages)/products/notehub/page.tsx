@@ -1,7 +1,7 @@
 'use client';
 
 import { Desc, Hero, ToViewLive, Subtitle, Title, ToRepo, Role, Page as Image } from "../shared";
-import { IconCode, IconDatabase, IconMail, IconRocket, IconShield, IconSparkles } from "@tabler/icons-react";
+import { IconBrandStripe, IconCode, IconDatabase, IconMail, IconRocket, IconShield, IconSparkles } from "@tabler/icons-react";
 import { useTranslation } from "react-i18next";
 
 const Page = () => {
@@ -15,6 +15,7 @@ const Page = () => {
         { icon: IconShield, title: t('pages.products.notehub.roles.security.title'), desc: t('pages.products.notehub.roles.security.description') },
         { icon: IconMail, title: t('pages.products.notehub.roles.messaging.title'), desc: t('pages.products.notehub.roles.messaging.description') },
         { icon: IconRocket, title: t('pages.products.notehub.roles.deploy.title'), desc: t('pages.products.notehub.roles.deploy.description') },
+        { icon: IconBrandStripe, title: t('pages.products.notehub.roles.monetization.title'), desc: t('pages.products.notehub.roles.monetization.description') },
     ]
 
     const images: { src: string, alt: string }[] = [

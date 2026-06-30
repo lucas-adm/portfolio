@@ -218,6 +218,10 @@
                     "deploy": {
                         "title": "Deployment",
                         "description": "Set up the continuous deployment pipeline and monitored the application in production"
+                    },
+                    "monetization": {
+                        "title": "Monetization",
+                        "description": "Integration with Stripe to receive donations with dynamic amounts, allowing any contribution starting from the platform's minimum to grant the user sponsor status"
                     }
                 },
                 "images": {

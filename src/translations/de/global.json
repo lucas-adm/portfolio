@@ -218,6 +218,10 @@
                     "deploy": {
                         "title": "Deployment",
                         "description": "Einrichtung von CI/CD-Pipelines und Monitoring in der Produktionsumgebung"
+                    },
+                    "monetization": {
+                        "title": "Monetarisierung",
+                        "description": "Integration mit Stripe zum Empfang von Spenden mit dynamischem Betrag, sodass jeder Beitrag ab dem Mindestbetrag der Plattform dem Nutzer den Sponsor-Status verleiht"
                     }
                 },
                 "images": {
