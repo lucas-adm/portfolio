@@ -27,6 +27,14 @@
                     "alt": "Drapeau du Brésil",
                     "label": "Portugais"
                 },
+                "ar": {
+                    "alt": "Drapeau de l'Égypte",
+                    "label": "Arabe"
+                },
+                "fa": {
+                    "alt": "Drapeau de l'Iran",
+                    "label": "Persan"
+                },
                 "he": {
                     "alt": "Drapeau d'Israël",
                     "label": "Hébreu"

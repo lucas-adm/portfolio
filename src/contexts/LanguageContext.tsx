@@ -11,7 +11,7 @@ type LanguageContextType = {
     setLanguage: (lng: Language) => void;
 }
 
-const RTL_LANGUAGES: Language[] = ['he'];
+const RTL_LANGUAGES: Language[] = ['he', 'ar', 'fa'];
 
 export const LanguageContext = createContext<LanguageContextType>({} as LanguageContextType);
 
@@ -29,6 +29,8 @@ export const LanguageProvider = ({ children }: { children: React.ReactNode }) =>
                 resources: {
                     pt: { global: translation.pt },
                     he: { global: translation.he },
+                    ar: { global: translation.ar },
+                    fa: { global: translation.fa },
                     de: { global: translation.de },
                     en: { global: translation.en },
                     es: { global: translation.es },

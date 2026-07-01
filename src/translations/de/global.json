@@ -27,6 +27,14 @@
                     "alt": "Flagge von Brasilien",
                     "label": "Portugiesisch"
                 },
+                "ar": {
+                    "alt": "Flagge Ägyptens",
+                    "label": "Arabisch"
+                },
+                "fa": {
+                    "alt": "Flagge des Iran",
+                    "label": "Persisch"
+                },
                 "he": {
                     "alt": "Flagge von Israel",
                     "label": "Hebräisch"

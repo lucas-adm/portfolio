@@ -1,0 +1,304 @@
+{
+    "backToTop": "الرجوع إلى الأعلى",
+    "header": {
+        "navAriaLabel": "التنقل الرئيسي في الموقع",
+        "links": {
+            "profile": "نبذة عني",
+            "home": "الرئيسية",
+            "work": "الأعمال",
+            "experience": "الخبرة",
+            "tools": "الأدوات",
+            "contact": "تواصل"
+        }
+    },
+    "aside": {
+        "buttons": {
+            "language": {
+                "alt": "علم البرازيل",
+                "label": "اللغة"
+            },
+            "theme": {
+                "label": "المظهر"
+            }
+        },
+        "dropdowns": {
+            "language": {
+                "pt": {
+                    "alt": "علم البرازيل",
+                    "label": "البرتغالية"
+                },
+                "ar": {
+                    "alt": "علم مصر",
+                    "label": "العربية"
+                },
+                "fa": {
+                    "alt": "علم إيران",
+                    "label": "الفارسية"
+                },
+                "he": {
+                    "alt": "علم إسرائيل",
+                    "label": "العبرية"
+                },
+                "de": {
+                    "alt": "علم ألمانيا",
+                    "label": "الألمانية"
+                },
+                "en": {
+                    "alt": "علم الولايات المتحدة",
+                    "label": "الإنجليزية"
+                },
+                "es": {
+                    "alt": "علم إسبانيا",
+                    "label": "الإسبانية"
+                },
+                "fr": {
+                    "alt": "علم فرنسا",
+                    "label": "الفرنسية"
+                }
+            },
+            "theme": {
+                "dark": "داكن",
+                "light": "فاتح"
+            }
+        }
+    },
+    "pages": {
+        "main": {
+            "sections": {
+                "profile": {
+                    "photo": {
+                        "alt": "صورة لوكاس"
+                    },
+                    "name": "Lucas A. de Moraes",
+                    "description": "مطور Full Stack",
+                    "location": "جنوب ميناس، البرازيل",
+                    "socials": {
+                        "linkedin": "افتح LinkedIn في تبويب جديد",
+                        "whatsapp": "افتح WhatsApp في تبويب جديد",
+                        "github": "افتح GitHub في تبويب جديد"
+                    },
+                    "button": "كلّمني"
+                },
+                "home": {
+                    "title": "من البسيط إلى",
+                    "strong": "القيّم",
+                    "description": "أصمم واجهات سهلة الاستخدام وعملية تضيف قيمة حقيقية لجودة المنتج.",
+                    "numbers": {
+                        "years": "سنة خبرة",
+                        "projects": "مشاريع مكتملة",
+                        "products": "منتج تم إطلاقه"
+                    },
+                    "buttons": {
+                        "contact": "كلّمني",
+                        "work": "شغلي"
+                    }
+                },
+                "work": {
+                    "title": "أحدث",
+                    "strong": "المشاريع",
+                    "products": {
+                        "notehub": {
+                            "alt": "صورة لشبكة NoteHub الاجتماعية",
+                            "name": "NoteHub",
+                            "description": "شبكة اجتماعية",
+                            "status": "متاح الآن"
+                        },
+                        "livechat": {
+                            "alt": "صورة لتطبيق الدردشة المباشرة",
+                            "name": "LiveChat",
+                            "description": "تطبيق مراسلة",
+                            "status": "متاح الآن"
+                        }
+                    }
+                },
+                "experience": {
+                    "title": "سنوات",
+                    "strong": "الخبرة",
+                    "companies": {
+                        "NoteHub": {
+                            "name": "NoteHub",
+                            "description": "مؤسس المشروع بالكامل، ومسؤول عن البنية المعمارية، والأمان، والتطوير، والإنتاج، وأنظمة المراسلة، والصيانة.",
+                            "role": "مطور Full Stack",
+                            "period": "2024 - حتى الآن"
+                        }
+                    }
+                },
+                "tools": {
+                    "title": "أهم",
+                    "strong": "الأدوات",
+                    "items": {
+                        "java": {
+                            "name": "Java",
+                            "description": "لغة برمجة"
+                        },
+                        "spring": {
+                            "name": "Spring",
+                            "description": "إطار عمل Java"
+                        },
+                        "docker": {
+                            "name": "Docker",
+                            "description": "منصة حاويات"
+                        },
+                        "typescript": {
+                            "name": "TypeScript",
+                            "description": "لغة برمجة"
+                        },
+                        "reactjs": {
+                            "name": "React.js",
+                            "description": "مكتبة JavaScript"
+                        },
+                        "nextjs": {
+                            "name": "Next.js",
+                            "description": "إطار عمل React"
+                        },
+                        "postgres": {
+                            "name": "PostgreSQL",
+                            "description": "قاعدة بيانات"
+                        },
+                        "supabase": {
+                            "name": "Supabase",
+                            "description": "منصة تخزين"
+                        },
+                        "flyio": {
+                            "name": "Fly.io",
+                            "description": "منصة استضافة"
+                        },
+                        "vercel": {
+                            "name": "Vercel",
+                            "description": "منصة استضافة"
+                        }
+                    }
+                },
+                "contact": {
+                    "title": "تواصل",
+                    "strong": "معايا",
+                    "form": {
+                        "legend": "التواصل",
+                        "name": {
+                            "label": "الاسم",
+                            "placeholder": "اسمك"
+                        },
+                        "email": {
+                            "label": "البريد الإلكتروني",
+                            "placeholder": "your@email.com"
+                        },
+                        "message": {
+                            "label": "الرسالة",
+                            "placeholder": "اكتب رسالتك"
+                        },
+                        "button": {
+                            "text": "إرسال"
+                        }
+                    }
+                }
+            }
+        },
+        "products": {
+            "goHome": "المنتجات",
+            "notehub": {
+                "title": "NoteHub",
+                "subtitle": "شبكة اجتماعية",
+                "description": "NoteHub منصة مفتوحة المصدر لإنشاء الملاحظات وتنظيمها ومشاركتها. تدعم التحرير مع تمييز الصياغة البرمجية ومعاينة Markdown. بسيطة وسهلة الاستخدام ومفتوحة لمساهمات المجتمع.",
+                "view": "عرض مباشر",
+                "navAriaLabel": "روابط خارجية متعلقة بالمنتج",
+                "roles": {
+                    "ulAriaLabel": "قائمة مجالات العمل في مشروع NoteHub",
+                    "branding": {
+                        "title": "الهوية البصرية",
+                        "description": "مسؤول عن تصميم الشعار، ووضع استراتيجية العلامة التجارية، وتطوير الهوية البصرية للمشروع."
+                    },
+                    "development": {
+                        "title": "التطوير",
+                        "description": "تطوير واجهة تفاعلية وديناميكية مع الالتزام بكتابة كود نظيف وأفضل ممارسات البرمجة."
+                    },
+                    "storage": {
+                        "title": "التخزين",
+                        "description": "تصميم قاعدة البيانات ودمج أنظمة التخزين الخاصة بالملاحظات."
+                    },
+                    "security": {
+                        "title": "الأمان",
+                        "description": "تنفيذ أنظمة المصادقة والتشفير وتطبيق أفضل ممارسات حماية البيانات."
+                    },
+                    "messaging": {
+                        "title": "المراسلة",
+                        "description": "إعداد وتنفيذ نظام إرسال رسائل البريد الإلكتروني الخاصة بالمعاملات."
+                    },
+                    "deploy": {
+                        "title": "النشر",
+                        "description": "إعداد خط النشر المستمر (CI/CD) ومراقبة التطبيق في بيئة الإنتاج."
+                    },
+                    "monetization": {
+                        "title": "تحقيق الدخل",
+                        "description": "دمج Stripe لاستقبال التبرعات بمبالغ مرنة، مما يسمح لأي مساهمة تبدأ من الحد الأدنى للمنصة بمنح المستخدم حالة الراعي."
+                    }
+                },
+                "images": {
+                    "hero": {
+                        "alt": "نظرة عامة على شبكة NoteHub الاجتماعية"
+                    },
+                    "ulAriaLabel": "معرض صور شاشات المنتج",
+                    "1": {
+                        "alt": "الصفحة الرئيسية لـ NoteHub"
+                    },
+                    "2": {
+                        "alt": "صفحة الملف الشخصي للمستخدم في NoteHub"
+                    },
+                    "3": {
+                        "alt": "خلاصة المستخدم التي تعرض الملاحظات في NoteHub"
+                    },
+                    "4": {
+                        "alt": "شاشة إشعارات المستخدم في NoteHub"
+                    },
+                    "5": {
+                        "alt": "واجهة NoteHub مع تغيير اللون الأساسي"
+                    }
+                }
+            },
+            "livechat": {
+                "title": "LiveChat",
+                "subtitle": "تطبيق مراسلة",
+                "description": "LiveChat هو مشروع تجريبي لتطبيق مراسلة فورية مستوحى من منصات مثل WhatsApp وTelegram. يستخدم التطبيق WebSockets لتوفير تواصل لحظي بين المستخدمين داخل غرفة دردشة عالمية مشتركة. تم تطوير المشروع بهدف استكشاف مفاهيم الاتصال في الوقت الفعلي، وإدارة الاتصالات، وبنية التطبيقات التفاعلية.",
+                "view": "عرض مباشر",
+                "navAriaLabel": "روابط خارجية متعلقة بالمنتج",
+                "roles": {
+                    "ulAriaLabel": "قائمة مجالات العمل في مشروع LiveChat",
+                    "branding": {
+                        "title": "الهوية البصرية",
+                        "description": "مسؤول عن تصميم الشعار، ووضع استراتيجية العلامة التجارية، وتطوير الهوية البصرية للمشروع."
+                    },
+                    "development": {
+                        "title": "التطوير",
+                        "description": "تطوير واجهة تفاعلية وديناميكية مع الالتزام بكتابة كود نظيف وأفضل ممارسات البرمجة."
+                    },
+                    "storage": {
+                        "title": "التخزين",
+                        "description": "تصميم قاعدة البيانات ودمج أنظمة التخزين الخاصة بالمشروع."
+                    }
+                },
+                "images": {
+                    "hero": {
+                        "alt": "نظرة عامة على تطبيق LiveChat"
+                    },
+                    "ulAriaLabel": "معرض صور شاشات المنتج",
+                    "1": {
+                        "alt": "الصفحة الرئيسية لـ LiveChat"
+                    },
+                    "2": {
+                        "alt": "شاشة محادثة فورية"
+                    }
+                }
+            }
+        }
+    },
+    "footer": {
+        "author": {
+            "text": "صُنع بواسطة",
+            "name": "Lucas"
+        },
+        "tech": {
+            "text": "تم تطويره باستخدام",
+            "name": "Next.js"
+        }
+    },
+    "notFound": "مسار غير صالح."
+}

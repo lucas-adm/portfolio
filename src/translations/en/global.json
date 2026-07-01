@@ -27,6 +27,14 @@
                     "alt": "Flag of Brazil",
                     "label": "Portuguese"
                 },
+                "ar": {
+                    "alt": "Flag of Egypt",
+                    "label": "Arabic"
+                },
+                "fa": {
+                    "alt": "Flag of Iran",
+                    "label": "Persian"
+                },
                 "he": {
                     "alt": "Flag of Israel",
                     "label": "Hebrew"

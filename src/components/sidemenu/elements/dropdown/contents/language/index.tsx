@@ -8,6 +8,8 @@ export const LanguageContent = (props: React.HTMLAttributes<HTMLDivElement>) => 
             {...props}
         >
             <Item lng="pt" />
+            <Item lng="ar" />
+            <Item lng="fa" />
             <Item lng="he" />
             <Item lng="de" />
             <Item lng="en" />

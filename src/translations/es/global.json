@@ -27,6 +27,14 @@
                     "alt": "Bandera de Brasil",
                     "label": "Portugués"
                 },
+                "ar": {
+                    "alt": "Bandera de Egipto",
+                    "label": "Árabe"
+                },
+                "fa": {
+                    "alt": "Bandera de Irán",
+                    "label": "Persa"
+                },
                 "he": {
                     "alt": "Bandera de Israel",
                     "label": "Hebreo"
