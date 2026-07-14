@@ -176,15 +176,26 @@
                         "legend": "تماس",
                         "name": {
                             "label": "نام",
-                            "placeholder": "نام شما"
+                            "placeholder": "نام شما",
+                            "errors": {
+                                "min": "حداقل ۲ کاراکتر",
+                                "max": "حداکثر ۷۲ کاراکتر"
+                            }
                         },
                         "email": {
                             "label": "ایمیل",
-                            "placeholder": "your@email.com"
+                            "placeholder": "your@email.com",
+                            "errors": {
+                                "email": "ایمیل نامعتبر است"
+                            }
                         },
                         "message": {
                             "label": "پیام",
-                            "placeholder": "پیام شما"
+                            "placeholder": "پیام شما",
+                            "errors": {
+                                "min": "حداقل ۲۴ کاراکتر",
+                                "max": "حداکثر ۲۴۸ کاراکتر"
+                            }
                         },
                         "button": {
                             "text": "ارسال"

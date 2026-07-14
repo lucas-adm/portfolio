@@ -176,15 +176,26 @@
                         "legend": "التواصل",
                         "name": {
                             "label": "الاسم",
-                            "placeholder": "اسمك"
+                            "placeholder": "اسمك",
+                            "errors": {
+                                "min": "الحد الأدنى حرفان",
+                                "max": "الحد الأقصى 72 حرفًا"
+                            }
                         },
                         "email": {
                             "label": "البريد الإلكتروني",
-                            "placeholder": "your@email.com"
+                            "placeholder": "your@email.com",
+                            "errors": {
+                                "email": "البريد الإلكتروني غير صالح"
+                            }
                         },
                         "message": {
                             "label": "الرسالة",
-                            "placeholder": "اكتب رسالتك"
+                            "placeholder": "اكتب رسالتك",
+                            "errors": {
+                                "min": "الحد الأدنى 24 حرفًا",
+                                "max": "الحد الأقصى 248 حرفًا"
+                            }
                         },
                         "button": {
                             "text": "إرسال"

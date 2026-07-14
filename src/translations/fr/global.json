@@ -176,15 +176,26 @@
                         "legend": "Contact",
                         "name": {
                             "label": "Nom",
-                            "placeholder": "Votre nom"
+                            "placeholder": "Votre nom",
+                            "errors": {
+                                "min": "Minimum de 2 caractères",
+                                "max": "Maximum de 72 caractères"
+                            }
                         },
                         "email": {
                             "label": "E-mail",
-                            "placeholder": "Votre e-mail"
+                            "placeholder": "Votre e-mail",
+                            "errors": {
+                                "email": "Adresse e-mail invalide"
+                            }
                         },
                         "message": {
                             "label": "Message",
-                            "placeholder": "Votre message"
+                            "placeholder": "Votre message",
+                            "errors": {
+                                "min": "Minimum de 24 caractères",
+                                "max": "Maximum de 248 caractères"
+                            }
                         },
                         "button": {
                             "text": "Envoyer"

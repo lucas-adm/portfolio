@@ -176,15 +176,26 @@
                         "legend": "Kontakt aufnehmen",
                         "name": {
                             "label": "Name",
-                            "placeholder": "Dein Name"
+                            "placeholder": "Dein Name",
+                            "errors": {
+                                "min": "Mindestens 2 Zeichen",
+                                "max": "Maximal 72 Zeichen"
+                            }
                         },
                         "email": {
                             "label": "E-Mail",
-                            "placeholder": "Deine E-Mail"
+                            "placeholder": "Deine E-Mail",
+                            "errors": {
+                                "email": "Ungültige E-Mail-Adresse"
+                            }
                         },
                         "message": {
                             "label": "Nachricht",
-                            "placeholder": "Deine Nachricht"
+                            "placeholder": "Deine Nachricht",
+                            "errors": {
+                                "min": "Mindestens 24 Zeichen",
+                                "max": "Maximal 248 Zeichen"
+                            }
                         },
                         "button": {
                             "text": "Senden"

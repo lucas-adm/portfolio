@@ -176,15 +176,26 @@
                         "legend": "יצירת קשר",
                         "name": {
                             "label": "שם",
-                            "placeholder": "השם שלך"
+                            "placeholder": "השם שלך",
+                            "errors": {
+                                "min": "לפחות 2 תווים",
+                                "max": "עד 72 תווים"
+                            }
                         },
                         "email": {
                             "label": "אימייל",
-                            "placeholder": "האימייל שלך"
+                            "placeholder": "האימייל שלך",
+                            "errors": {
+                                "email": "כתובת אימייל לא תקינה"
+                            }
                         },
                         "message": {
                             "label": "הודעה",
-                            "placeholder": "ההודעה שלך"
+                            "placeholder": "ההודעה שלך",
+                            "errors": {
+                                "min": "לפחות 24 תווים",
+                                "max": "עד 248 תווים"
+                            }
                         },
                         "button": {
                             "text": "שלח"
