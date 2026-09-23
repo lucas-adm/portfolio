@@ -299,6 +299,14 @@
                     }
                 }
             }
+        },
+        "sent": {
+            "title": {
+                "start": "MENSAJE",
+                "strong": "ENVIADO"
+            },
+            "paragraph": "Nos vemos.",
+            "button": "Inicio"
         }
     },
     "footer": {
